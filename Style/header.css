@@ -1,0 +1,30 @@
+:root {
+  --black: #28282a;
+  --green: #40916d;
+}
+
+.header {
+  border-bottom: 2px solid var(--black);
+  background-color: var(--green);
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+  font-size: calc(0.75rem + 0.75vw);
+}
+
+.logoFlex {
+  display: flex;
+  align-items: center;
+}
+
+.justify {
+  justify-self: center;
+}
+
+.link {
+  color: var(--black);
+  text-decoration: none;
+}
