@@ -1,3 +1,5 @@
+/*74c69d*/
+
 :root {
   --black: #28282a;
   --green: #40916d;
@@ -6,6 +8,9 @@
 .header {
   border-bottom: 2px solid var(--black);
   background-color: var(--green);
+  position: fixed;
+  z-index: 3;
+  width: 100%;
 }
 
 .nav {

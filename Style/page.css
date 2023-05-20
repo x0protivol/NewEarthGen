@@ -1,0 +1,48 @@
+.main {
+  padding-top: 10rem;
+  height: 100%;
+  margin-left: 5rem;
+}
+
+.text-cover {
+  z-index: 2;
+  position: relative;
+}
+
+.text-cover p {
+  font-size: clamp(0.9em, 0.75rem + 0.5vw, 1.2em);
+  font-weight: 400;
+}
+
+.main-text {
+  letter-spacing: 2px;
+  font-weight: 500;
+  font-size: calc(5rem + 0.75vw);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(385px,1fr));
+  column-gap: 40px;
+  padding-inline: 60px;
+  margin-top: 2rem;
+}
+
+.cover {
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: #74c69d;
+  margin-bottom: 2rem;
+  z-index: 2;
+}
+
+.cover:hover {
+  box-shadow: 0 0 0 4px palevioletred;
+}
+
+.align {
+  grid-column: 1/3;
+}
