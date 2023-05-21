@@ -1,0 +1,17 @@
+.main {
+  padding-top: 10rem;
+  width: calc(60% - 60px);
+  margin: 0 auto;
+  height: 100vh;
+  background-color: #c1fba4;
+}
+
+.heading-text {
+  font-size: calc(1.25rem + 0.75vw);
+  margin-bottom: 0.5rem;
+  letter-spacing: 1px;
+}
+
+.p-text {
+  text-align: justify;
+}
