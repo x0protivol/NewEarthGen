@@ -43,6 +43,7 @@
   color: #132a13;
   margin-bottom: 2rem;
   z-index: 2;
+  text-decoration: none;
 }
 
 .cover:hover {

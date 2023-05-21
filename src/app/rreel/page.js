@@ -3,8 +3,8 @@
 import Link from "next/link";
 import "../../../Style/rreel.css";
 
-export default function About() {
-  const videoUrl = 'https://app.colossyan.com/share/0aijwzdg';
+const Rreel = () => {
+  // const videoUrl = 'https://app.colossyan.com/share/0aijwzdg';
 
   return (
     <main className="main">
@@ -31,3 +31,5 @@ export default function About() {
     </main>
   )
 }
+
+export default Rreel;
