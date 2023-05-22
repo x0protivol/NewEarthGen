@@ -6,7 +6,7 @@ import ParticlesBackground from '../../component/Particles';
 export default function Home() {
   return (
     <>
-      <main className='main'>
+      <main className='home-main'>
         <ParticlesBackground />
         <div className='text-cover'>
           <h1 className='main-text'>

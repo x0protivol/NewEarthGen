@@ -1,18 +1,11 @@
-/*74c69d*/
-
-:root {
-  --black: #28282a;
-  --green: #40916d;
-}
-
 #menu,
 #close {
   display: none;
 }
 
 .header {
-  border-bottom: 2px solid var(--black);
-  background-color: var(--green);
+  border-bottom: 1px solid black;
+  background-color: #f7f8eb;
   position: fixed;
   z-index: 3;
   width: 100%;

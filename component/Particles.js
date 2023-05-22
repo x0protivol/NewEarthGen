@@ -28,11 +28,11 @@ const ParticlesBackground = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          // background: {
-          //   color: {
-          //     value: "#b5e48c",
-          //   },
-          // },
+          background: {
+            color: {
+              value: "#f7f8eb",
+            },
+          },
           style: {
             position: "absolute",
             height: "80%",

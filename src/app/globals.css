@@ -83,6 +83,7 @@
 body {
   height: 100vh;
   overflow-x: hidden;
+  background-color: #f7f8ec;
 }
 
 /* html,

@@ -1,4 +1,4 @@
-.main {
+.home-main {
   padding-top: 10rem;
   height: 100%;
   margin-left: 5rem;
@@ -25,6 +25,7 @@
   grid-template-columns: repeat(auto-fit,minmax(385px,1fr));
   column-gap: 40px;
   padding-inline: 60px;
+  padding-block: 4rem;
   /* background-color: #132a13; */
   background-color: #fbf8cc;
 }
