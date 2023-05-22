@@ -53,15 +53,8 @@ export default function Header() {
             )}
           </li>
           <li>
-            {activeLink !== '/' && (
-              <Link href="/" onClick={() => handleLinkClick('/')} className="link">
-                Destiny
-              </Link>
-            )}
-          </li>
-          <li>
-            {activeLink !== '/' && (
-              <Link href="/" onClick={() => handleLinkClick('/')} className="link">
+            {activeLink !== '/beltcoin' && (
+              <Link href="/beltcoin" onClick={() => handleLinkClick('/beltcoin')} className="link">
                 Belt coin
               </Link>
             )}

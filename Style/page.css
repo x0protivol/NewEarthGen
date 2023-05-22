@@ -53,5 +53,5 @@
 }
 
 .align {
-  grid-column: 1/3;
+  justify-content: center;
 }

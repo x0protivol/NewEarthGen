@@ -19,4 +19,10 @@ body {
 
 .p-text {
   text-align: justify;
+  margin-bottom: 1.5rem;
+}
+
+.m-bottom {
+  margin-bottom: 8rem;
+  display: inline-block;
 }

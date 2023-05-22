@@ -21,9 +21,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  font-size: calc(0.3rem + 1vw);
-  padding-block-start: min(2rem, 4vh);
-  padding-block-end: min(2rem, 4vh);
 }
 
 .header-ul {
@@ -33,7 +30,7 @@
 
 .header-ul li {
   list-style-type: none;
-  padding-inline-end: clamp(1.5rem,  6%,   3rem);
+  padding-inline-end: clamp(1.5rem,  4%,   3rem);
 }
 
 .link {
@@ -44,19 +41,6 @@
   cursor: pointer;
   font-family: 'Arimo', sans-serif;
   font-weight: 500;
-  font-size: calc(0.75rem + 0.75vw);
+  font-size: calc(0.75rem + 0.5vw);
 }
 
-/* .logoFlex {
-  display: flex;
-  align-items: center;
-}
-
-.justify {
-  justify-self: center;
-} */
-
-/* .link {
-  color: var(--black);
-  text-decoration: none;
-} */

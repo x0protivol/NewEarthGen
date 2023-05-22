@@ -28,18 +28,16 @@ const ParticlesBackground = () => {
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
-          background: {
-            color: {
-              value: "#b5e48c",
-            },
-          },
+          // background: {
+          //   color: {
+          //     value: "#b5e48c",
+          //   },
+          // },
           style: {
             position: "absolute",
             height: "80%",
             top: "20%",
           },
-          // position: "absolute",
-          // zIndex: "0",
           fpsLimit: 120,
           interactivity: {
             events: {
@@ -65,10 +63,10 @@ const ParticlesBackground = () => {
           },
           particles: {
             color: {
-              value: "#ffffff",
+              value: "#000",
             },
             links: {
-              color: "#ffffff",
+              color: "#000",
               distance: 150,
               enable: true,
               opacity: 0.5,

@@ -19,7 +19,7 @@ const Rreel = () => {
           While RREEL Inc builds the theatre tech, developers build the vibrant ecosystem of applications that connect communities and create new avenues for permissionless participation.
           RREEL is a permissionless ecosystem for the preservation of memories through theaters . The platform provides the infrastructure for issuers to mint and distribute digital collectables that mark memorable moments and movies , while rewarding them with tokens.
         </p>
-        <div>
+        <div className="m-bottom">
           <Link href="https://app.colossyan.com/share/0aijwzdg">Presentation Video</Link>
         </div>
         {/* <ReactPlayer

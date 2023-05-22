@@ -14,7 +14,7 @@ const ResearchClear = () => {
           The world of academic research is constantly evolving, driven by the pursuit of knowledge and the desire to advance various fields of study. However, this pursuit is often hindered by a range of challenges. Researchers face funding problems, struggle with limited resources, and encounter barriers in publishing their work. Additionally, the rise of predatory publishers, ghost journals, and questionable impact ratings has further eroded the integrity and credibility of academic research.
           ResearchClear recognizes these challenges and seeks to provide a comprehensive solution. By leveraging the power of blockchain technology, ResearchClear establishes a transparent and trustless environment that promotes integrity, incentivizes high-quality research, and connects researchers with funding opportunities.
         </p>
-        <div>
+        <div className="m-bottom">
           <Link href="https://app.colossyan.com/share/1vspqs45">Presentation Video</Link>
         </div>
         {/* <ReactPlayer
