@@ -18,28 +18,56 @@ export default function Header() {
       <nav className="nav">
         <div className="logoFlex">
           <Image src='/new_earth.png' alt="New Gen Earth Logo" width={200} height={130} />
-          <span>New Gen Earth</span>
+          {/* <span>New Gen Earth</span> */}
         </div>
-        <div className="justify">
-          {activeLink !== '/' && (
-              <Link href="/" onClick={() => handleLinkClick('/')}>
+        {/* <div className="justify">
+
+        </div> */}
+        <ul className="header-ul">
+          <li>
+            {activeLink !== '/' && (
+              <Link href="/" onClick={() => handleLinkClick('/')} className="link">
                 Home
               </Link>
             )}
-        </div>
-        <div>
-          {activeLink !== '/rreel' && (
-            <Link href="/rreel" onClick={() => handleLinkClick('/rreel')}>
-              RREEL
-            </Link>
-          )}
-          {activeLink !== '/research-clear' && (
-            <Link href="/research-clear" onClick={() => handleLinkClick('/research-clear')}>
-              Research Clear
-            </Link>
-          )}
+          </li>
+          <li>
+            {activeLink !== '/rreel' && (
+              <Link href="/rreel" onClick={() => handleLinkClick('/rreel')} className="link">
+                RREEL
+              </Link>
+            )} 
+          </li>
+          <li>
+            {activeLink !== '/research-clear' && (
+              <Link href="/research-clear" onClick={() => handleLinkClick('/research-clear')} className="link">
+                Research Clear
+              </Link>
+            )}
+          </li>
+          <li>
+            {activeLink !== '/equine-nft' && (
+              <Link href="/equine-nft" onClick={() => handleLinkClick('/equine-nft')} className="link">
+                Equine NFT
+              </Link>
+            )}
+          </li>
+          <li>
+            {activeLink !== '/' && (
+              <Link href="/" onClick={() => handleLinkClick('/')} className="link">
+                Destiny
+              </Link>
+            )}
+          </li>
+          <li>
+            {activeLink !== '/' && (
+              <Link href="/" onClick={() => handleLinkClick('/')} className="link">
+                Belt coin
+              </Link>
+            )}
+          </li>          
 
-        </div>
+        </ul>
       </nav>
     </header>
   )

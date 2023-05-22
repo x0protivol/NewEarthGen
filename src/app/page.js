@@ -38,7 +38,7 @@ export default function Home() {
             <p>EquineNFT aims to bring the world of horse ownership into the digital age. By combining advanced technology with the traditional industry of horse ownership, EquineNFT offers a platform for creating unique NFT IDs for each horse. These NFTs serve as secure and reliable proof of ownership that can be used for buying, selling, and trading horses.</p>
           </Link>
           <div className='cover align'>
-            <Image src="/DESTINY.png" alt="rrel logo" width={80} height={80} />
+            <Image src="/DESTINY.png" alt="Destiny logo" width={80} height={80} />
             <h2>Destiny Token Project</h2>
             <p>EquineNFT aims to bring the world of horse ownership into the digital age. By combining advanced technology with the traditional industry of horse ownership, EquineNFT offers a platform for creating unique NFT IDs for each horse. These NFTs serve as secure and reliable proof of ownership that can be used for buying, selling, and trading horses. The EquineNFT platform also includes a comprehensive marketplace where owners can showcase their horses to potential buyers, upload detailed information and images, and establish a breeding plan.</p>
           </div>
