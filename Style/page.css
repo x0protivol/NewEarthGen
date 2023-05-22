@@ -33,7 +33,7 @@
 /* better
 #6ebc6e */
 .cover {
-  height: 25rem;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -54,4 +54,33 @@
 
 .align {
   justify-content: center;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 699px) {
+  .main {
+    margin-left: 2rem;
+  }
+
+  .main-text {
+    font-size: calc(2.75rem + .75vw);
+  }
+
+  .text-cover p {
+    font-size: calc(1.2rem + 0.75vw);
+    margin-top: 1.3rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    padding-inline: 15px;
+  }
+
+  .cover {
+    padding: 20px;
+  }
+
+  /* .cover img {
+    width: 15%;
+    height: 15%;
+  } */
 }

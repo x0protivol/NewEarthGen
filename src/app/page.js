@@ -24,7 +24,7 @@ export default function Home() {
           <Link href="/research-clear" className='cover'>
             <Image src="/ResearchClear.png" alt="Research logo" width={80} height={80} />
             <h2>Research Clear</h2>
-            <p>ResearchClear is an innovative blockchain-powered platform designed to revolutionize the landscape of academic research. With a mission to address the challenges faced by researchers and enhance the efficiency and transparency of the research process, ResearchClear aims to create a decentralized ecosystem that fosters collaboration, rewards quality contributions, and provides a secure and accessible platform for researchers to showcase their work.</p>
+            <p>ResearchClear is an innovative blockchain-powered platform designed to revolutionize the landscape of academic research. With a mission to address the challenges faced by researchers and enhance the efficiency and transparency of the research process.</p>
           </Link>
           <Link href="/equine-nft" className='cover'>
             <Image src="/equinenft.png" alt="rrel logo" width={80} height={80} />
