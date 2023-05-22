@@ -18,7 +18,6 @@ body {
 }
 
 .p-text {
-  text-align: justify;
   margin-bottom: 1.5rem;
 }
 
@@ -26,3 +25,11 @@ body {
   margin-bottom: 8rem;
   display: inline-block;
 }
+
+@media screen and (min-device-width: 320px) and (max-device-width: 699px) {
+  .main {
+    padding-top: 5rem;
+    width: calc(100% - 45px);
+  }
+}
+
