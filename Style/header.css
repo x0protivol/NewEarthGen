@@ -1,23 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
 
+:root {
+  --shadeOfGreen: #132a13;
+  --shadeOfWhite: #f7f8eb;
+}
+
 #menu,
 #close {
   display: none;
 }
 
 .header {
-  border-bottom: 1px solid #132a13;
-  background-color: #f7f8eb;
+  border-bottom: 1px solid var(--shadeOfGreen);
+  background-color: var(--shadeOfWhite);
   position: fixed;
   z-index: 3;
   width: 100%;
 }
 
 .nav {
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  font-size: calc(0.75rem + 0.75vw); */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -34,7 +35,7 @@
 }
 
 .link {
-  color: #132a13;
+  color: var(--shadeOfGreen);
   text-transform: capitalize;
   text-decoration: none;
   transition: all 0.2s ease;

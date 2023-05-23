@@ -1,18 +1,13 @@
 "use client";
 import Link from "next/link";
 import Image from "next/image";
-// import { useRouter } from "next/navigation";
 import { useState } from 'react';
-// import Font Awesome CSS
-//import "@fortawesome/fontawesome-svg-core/styles.css";
-// Import the FontAwesomeIcon component
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../Style/header.css";
 import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Header() {
-  // const router = useRouter();
   const [activeLink, setActiveLink] = useState(null);
   const [navbarOpen, setNavbarOpen] = useState(false)
   const showNavBar = () => setNavbarOpen(!navbarOpen);
@@ -26,7 +21,6 @@ export default function Header() {
       <nav className="nav">
         <div className="logoFlex">
           <Image src='/new_gen_earth_logo.png' alt="New Gen Earth Logo" width={200} height={130} />
-          {/* <span>New Gen Earth</span> */}
         </div>
         <div onClick={showNavBar}>
           <FontAwesomeIcon

@@ -17,8 +17,6 @@ const ParticlesBackground = () => {
 
   const particlesLoaded = useCallback( async (container) => {
     console.log(container);
-    // container.element.style.position = "absolute";
-    // container.element.style.zIndex = 0;
   }, []);
 
   return (
