@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap');
+
+:root {
+  --greenHover: #6ebc6e;
+  --gridColor: #fbf8cc;
+  --darkGreen: #132a13;
+  --lightGreen: #7ad0af;
+}
+
+.home-main {
+  padding-top: 10rem;
+  height: 100%;
+  margin-left: 5rem;
+}
+
+.text-cover {
+  z-index: 2;
+  position: relative;
+}
+
+.text-cover p {
+  font-size: clamp(0.9em, 0.75rem + 0.5vw, 1.2em);
+  font-weight: 400;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.main-text {
+  letter-spacing: 2px;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 500;
+  font-size: calc(5rem + 0.75vw);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(385px,1fr));
+  column-gap: 40px;
+  padding-inline: 60px;
+  padding-block: 4rem;
+  background-color: var(--gridColor);
+}
+
+.cover {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 40px;
+  background-color: var(--lightGreen);
+  color: var(--darkGreen);
+  margin-bottom: 2rem;
+  z-index: 2;
+  text-decoration: none;
+}
+
+.cover:hover {
+  background-color: var(--darkGreen);
+  box-shadow: 0 0 0 4px var(--greenHover);
+  color: var(--greenHover);
+}
+
+.cover h2 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+}
+
+.cover P {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.align {
+  justify-content: center;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 699px) {
+  .main {
+    margin-left: 2rem;
+  }
+
+  .main-text {
+    font-size: calc(2.75rem + .75vw);
+  }
+
+  .text-cover p {
+    font-size: calc(1.2rem + 0.75vw);
+    margin-top: 1.3rem;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    padding-inline: 15px;
+  }
+
+  .cover {
+    padding: 20px;
+  }
+
+}
