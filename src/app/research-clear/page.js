@@ -1,7 +1,9 @@
-import Link from "next/link";
+'use client';
 import "../../../Style/rreel.css";
+import ReactPlayer from "react-player";
 
 const ResearchClear = () => {
+  const videoUrl = "https://vimeo.com/829920600?share=copy";
   return (
     <main className="main">
       <div>
@@ -15,13 +17,12 @@ const ResearchClear = () => {
           ResearchClear recognizes these challenges and seeks to provide a comprehensive solution. By leveraging the power of blockchain technology, ResearchClear establishes a transparent and trustless environment that promotes integrity, incentivizes high-quality research, and connects researchers with funding opportunities.
         </p>
         <div className="m-bottom">
-          <Link href="https://app.colossyan.com/share/1vspqs45">Presentation Video</Link>
+          <ReactPlayer
+            url={videoUrl} 
+            controls={true}
+            playing={true} 
+          />
         </div>
-        {/* <ReactPlayer
-        url={videoUrl} 
-        controls={true}
-        playing={true} 
-        /> */}
       </div>
   </main>
   );
