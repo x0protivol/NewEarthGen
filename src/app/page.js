@@ -15,7 +15,33 @@ export default function Home() {
           <p>Making the Earth a cleaner and better place one day at a time</p>
         </div>
       </main>
-      <section className='grid-container'>
+      <section>
+        <div className='slider'>
+        {[...Array(4)].map((_, index) => (
+          <div className='slide-track' key={index}>
+            <Link href="/research-clear">
+              <Image src="/ResearchClear.png" alt='Research Clear Logo' width={80} height={80} />
+            </Link>
+            
+            <Link href="/rreel">
+              <Image src="/rreel.jpg" alt='RREEL Logo' width={80} height={80} />
+            </Link>
+    
+            {/* No Logo for BeltCoin provided */}
+            <Link href="">
+              <Image src="/DESTINY.png" alt='Destiny Token Logo' width={80} height={80} />
+            </Link>
+    
+            {/* No Logo for VibrateDNA provided */}
+            <Link href="/equine-nft">
+              <Image src="/equinenft.png" alt='EquineNFT Logo' width={80} height={80} />
+            </Link>
+            
+    
+          </div>
+        ))}
+        </div>
+        <div className='grid-container'>
           <Link href="/rreel" className='cover'>
             <Image src="/rreel.jpg" alt="rrel logo" width={80} height={80} />
             <h2>RREEL</h2>
@@ -36,7 +62,7 @@ export default function Home() {
             <h2>BeltCoin</h2>
             <p>BeltCoin is a revolutionary WEB3 startup with a vision to restore and preserve the Earths ecosystem while fostering bio diversity. The core focus is safeguarding keystone species within aquatic environments. Employing cutting edge hardware and leveraging cryptocurrency.</p>
           </Link>
-
+        </div>
       </section>
     </>
   )
