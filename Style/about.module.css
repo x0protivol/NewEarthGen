@@ -1,0 +1,30 @@
+.main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  column-gap: 10px;
+  padding-block-start: 10rem;
+  padding-inline: 80px;
+      padding-block-end: 5rem;
+}
+
+.headercover {
+  border-inline-start: 5px solid blue;
+  /* box-shadow: -9px 0px 0px 0px blue; */
+}
+
+.pleft {
+  padding-left: 1.5rem;
+}
+
+.areatwo {
+  grid-area: 2;
+  display: flex;
+  align-items: center;
+  padding-left: 1.5rem;
+  margin-block-start: 5rem;
+}
+
+.area {
+  grid-area: 2/3;
+  margin-block-start: 5rem;
+}
