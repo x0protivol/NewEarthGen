@@ -1,7 +1,10 @@
-import Link from "next/link";
+'use client'
+
+import ReactPlayer from "react-player";
 import "../../../Style/rreel.css";
 
 const EquineNft = () => {
+  const videoUrl = 'https://vimeo.com/830340448?share=copy';
   return (
     <main className="main">
       <div>
@@ -15,13 +18,13 @@ const EquineNft = () => {
           EquineNFT&apos;s platform enables horse owners to upload detailed information and images of their horses, which can be easily accessed and viewed by potential buyers. By allowing horse owners to showcase their horses in a visually appealing and informative way. It helps them to increase the chances of finding the right buyers. Horse owners can add a range of details about their horses, such as age, breed, gender, height, color, and temperament, along with multiple images.
         </p>
         <div className="m-bottom">
-          <Link href="https://app.colossyan.com/share/9ezogmgt">Presentation Video</Link>
+          <ReactPlayer
+            url={videoUrl} 
+            controls={true}
+            playing={true} 
+          />
         </div>
-        {/* <ReactPlayer
-        url={videoUrl} 
-        controls={true}
-        playing={true} 
-        /> */}
+
       </div>
   </main>
   );
