@@ -31,10 +31,10 @@ const About = () => {
             <Image src="/success.jpg" alt="" width={120} height={100} />
           </div>
           {/*2 */}
-          <div>
+          <div className={styles.orderthree}>
             <Image src="/projects.jpg" alt="" width={120} height={100} />
           </div>
-          <div>
+          <div className={styles.ordertwo}>
             <h2>Launching Projects in the Web3 Ecosystem</h2>
             <p className={styles.gridparagraph}>
               Our primary focus is on ideating, developing, and launching projects within the Web3 ecosystem. From decentralized applications (dApps) to blockchain-based platforms, we aim to create innovative solutions that empower individuals and transform industries. With a deep understanding of various blockchain protocols and their capabilities, we leverage the decentralized nature of Web3 to build secure, transparent, and scalable projects.
@@ -51,10 +51,10 @@ const About = () => {
             <Image src="/code.jpg" alt="" width={120} height={100} />
           </div>
           {/*4 */}
-          <div>
+          <div className={styles.orderfive}>
             <Image src="/team.jpg" alt="" width={120} height={100} />
           </div>
-          <div>
+          <div className={styles.orderfour}>
             <h2>A Holistic Approach to Project Success</h2>
             <p className={styles.gridparagraph}>
               While technical expertise is crucial, we understand that successful projects in Web3 require more than just code. We take a holistic approach, considering factors such as user experience, market fit, and community engagement. Our team combines technical prowess with business acumen, drawing on our vast network of industry connections and experiences. This enables us to deliver projects that resonate with users and thrive in the Web3 ecosystem.

@@ -3,7 +3,7 @@
 
 .main {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
   column-gap: 10px;
   padding-block-start: 12rem;
   padding-inline: 80px;
@@ -49,8 +49,8 @@
 
 .gridcontainer {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
-  row-gap: 90px;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 50px;
   column-gap: 50px;
   padding-inline: 90px;
   background-color: #ccd5ae;
@@ -152,7 +152,6 @@
   cursor: pointer;
   text-align: center;
   text-decoration: none;
-  width: 20%;
   margin-left: 1.5rem;
 }
 
@@ -230,5 +229,107 @@
 .btn:hover {
   background-color: #ccd5ae;
   border: 1px solid #f7f8eb;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 699px) {
+  .main {
+    display: block;
+    padding-inline: 0;
+    padding-block-start: 6rem;
+  }
+
+  .areatwo,
+  .area {
+    padding-inline: 1.5rem;
+    margin-block-start: 2rem;
+  }
+
+  .gridcontainer {
+    display: flex;
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+    row-gap: 20px;
+    flex-direction: column;
+  }
+
+  .gridcontainer img {
+    transform: inherit;
+    padding-top: 0;
+  }
+
+  .ordertwo {
+    order: 2;
+  }
+
+  .orderthree {
+    order: 3;
+  }
+
+  .orderfour {
+    order: 4;
+  }
+
+  .orderfive {
+    order: 5;
+  }
+
+  .center h3 {
+    width: auto;
+    margin-inline: 1.5rem;
+    padding-block: 1rem;
+  }
+
+  .centersection {
+    padding-inline: 0;
+    padding-block: 2rem;
+  }
+
+  .sectionheader {
+    margin-block-end: 1.5rem;
+  }
+
+  .centertext {
+    width: 100%;
+    padding-inline: 1.5rem;
+  }
+
+  .flex {
+    padding-block: 0.5rem;
+    margin-block: 0;
+    width: auto;
+    margin-inline: 1.5rem;
+    flex-direction: column;
+  }
+
+  .flex p {
+    font-size: calc(0.75rem + 0.5vw);
+  }
+
+  .flex a {
+    padding-inline: clamp(3rem,6%, 3rem);
+    padding-block: 0.3rem;
+    width: auto;
+    border-radius: 25px;
+    margin-block-start: 0.5rem;
+    margin-inline: 0;
+  }
+
+  .footer {
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+  }
+
+  .flexcontainer {
+    flex-direction: column;
+  }
+
+  .blockend {
+    display: none;
+  }
+
+  .btn {
+    margin-block-end: 1.5rem;
+  }
+
 }
 
