@@ -23,7 +23,7 @@ const About = () => {
         <div className={styles.gridcontainer}>
           <div>
             <h2>Building Teams for Web3 Success</h2>
-            <p>
+            <p className={styles.gridparagraph}>
               At NewGenEarth, we believe in the power of collaboration and the strength of a well-aligned team. We bring together talented individuals with diverse backgrounds and expertise, fostering a creative and inclusive environment. Our team-building approach ensures that we assemble the right skills and knowledge needed to tackle complex challenges in the Web3 landscape.
             </p>
           </div>
@@ -36,14 +36,14 @@ const About = () => {
           </div>
           <div>
             <h2>Launching Projects in the Web3 Ecosystem</h2>
-            <p>
+            <p className={styles.gridparagraph}>
               Our primary focus is on ideating, developing, and launching projects within the Web3 ecosystem. From decentralized applications (dApps) to blockchain-based platforms, we aim to create innovative solutions that empower individuals and transform industries. With a deep understanding of various blockchain protocols and their capabilities, we leverage the decentralized nature of Web3 to build secure, transparent, and scalable projects.
             </p>
           </div>
           {/*3 */}
           <div>
             <h2>Navigating the Web3 Landscape</h2>
-            <p>
+            <p className={styles.gridparagraph}>
               The Web3 space is constantly evolving, and staying ahead of the curve is paramount. Our team at NewGenEarth is committed to continuous learning and exploration. We stay up to date with the latest advancements in blockchain technology, smart contracts, decentralized finance (DeFi), and other Web3 trends. This allows us to identify opportunities, mitigate risks, and provide valuable insights to our partners.
             </p>
           </div>
@@ -56,7 +56,7 @@ const About = () => {
           </div>
           <div>
             <h2>A Holistic Approach to Project Success</h2>
-            <p>
+            <p className={styles.gridparagraph}>
               While technical expertise is crucial, we understand that successful projects in Web3 require more than just code. We take a holistic approach, considering factors such as user experience, market fit, and community engagement. Our team combines technical prowess with business acumen, drawing on our vast network of industry connections and experiences. This enables us to deliver projects that resonate with users and thrive in the Web3 ecosystem.
             </p>
           </div>
