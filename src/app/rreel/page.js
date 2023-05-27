@@ -1,10 +1,9 @@
-// 'use client'
-//import ReactPlayer from "react-player";
-import Link from "next/link";
+'use client'
+import ReactPlayer from "react-player";
 import "../../../Style/rreel.css";
 
 const Rreel = () => {
-  // const videoUrl = 'https://app.colossyan.com/share/0aijwzdg';
+  const videoUrl = 'https://vimeo.com/829796409?share=copy';
 
   return (
     <main className="main">
@@ -20,13 +19,12 @@ const Rreel = () => {
           RREEL is a permissionless ecosystem for the preservation of memories through theaters . The platform provides the infrastructure for issuers to mint and distribute digital collectables that mark memorable moments and movies , while rewarding them with tokens.
         </p>
         <div className="m-bottom">
-          <Link href="https://app.colossyan.com/share/0aijwzdg">Presentation Video</Link>
+          <ReactPlayer
+          url={videoUrl} 
+          controls={true}
+          playing={true} 
+          />
         </div>
-        {/* <ReactPlayer
-         url={videoUrl} 
-         controls={true}
-         playing={true} 
-        /> */}
       </div>
     </main>
   )
