@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;500&display=swap');
+
 .main {
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
   column-gap: 10px;
-  padding-block-start: 10rem;
+  padding-block-start: 12rem;
   padding-inline: 80px;
-      padding-block-end: 5rem;
+  padding-block-end: 5rem;
 }
 
 .headercover {
@@ -28,3 +30,157 @@
   grid-area: 2/3;
   margin-block-start: 5rem;
 }
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(500px,1fr));
+  row-gap: 90px;
+  column-gap: 50px;
+  padding-inline: 90px;
+  background-color: #ccd5ae;
+  padding-block: 4.5rem;
+}
+
+.gridcontainer img {
+  transform: scaleY(3);
+  color: transparent;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.center {
+  height: auto;
+  padding-block: 2.5rem;
+}
+
+.center h3 {
+  text-align: center;
+  text-decoration: underline;
+  width: calc(60% - 30px);
+  margin: 0 auto;
+  padding-block: 2rem;
+  background-color: #ccd5ae;
+  backdrop-filter: blur(81.5485px);
+  border-radius: 5px;
+}
+
+.centersection {
+  padding-inline: 80px;
+  padding-block: 3.5rem;
+  font-family: 'Cabin', sans-serif;
+  background-color: #ccd5ae;
+}
+
+.sectionheader {
+  border-inline-start: 5px solid blue;
+  margin-block-end: 3rem; 
+}
+
+.centertext {
+  text-align: center;
+  width: calc(80% - 30px);
+  margin: 0 auto;
+}
+
+.centertext p {
+  padding-block-end: 2rem;
+}
+
+/* .centertext img {
+  width: auto;
+} */
+
+.flex {
+  display: flex;
+  background-color: #f7f8eb;
+  padding-block: 2rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  margin-block: 3rem;
+}
+
+.flex p {
+  font-size: calc(1.5rem + 0.5vw);
+  font-weight: 500;
+}
+
+.flex a {
+  padding: 0.5rem 1.5rem;
+  font-size: 1.2rem;
+  letter-spacing: .5px;
+  border: 1px solid #ccd5ae;
+  color: #000;
+  border-radius: 30px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 400;
+  width: 20%;
+  margin-left: 1.5rem;
+}
+
+.footer {
+  padding-inline: 60px;
+  padding-block: 4rem;
+  background-color: #f7f8eb;
+  font-family: 'Cabin', sans-serif;
+}
+
+.flexcontainer {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+}
+
+.flexcontainer a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: calc(0.75rem + 0.5vw);
+  font-weight: 400;
+}
+
+.text {
+  text-align: center;
+  font-family: inherit;
+}
+
+.pblock {
+  padding-block-end: 1rem;
+  font-size: calc(1rem + 0.5vw);
+  font-family: inherit;
+  font-weight: 400;
+
+}
+
+.pbottom {
+  padding-block-end: 0.5rem;
+  color: #000;
+}
+
+.blockend {
+  font-size: calc(1rem + 1vw);
+  font-family: inherit;
+  font-weight: 500;
+  padding-block-end: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem;
+  width: 180px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: calc(0.75rem + 0.5vw);
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.btn a {
+  color: #000;
+}
+
+.btn:hover {
+  background-color: #ccd5ae;
+  border: 1px solid #f7f8eb;
+}
+

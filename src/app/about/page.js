@@ -1,7 +1,9 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../../../Style/about.module.css";
 
 const About = () => {
+  const emailAddress = 'NewGenEarth@protonmail.com';
   return (
     <>
       <main className={styles.main}>
@@ -17,8 +19,8 @@ const About = () => {
           </p>
         </div>
       </main>
-      <section className="flex-contianer">
-        <div>
+      <section>
+        <div className={styles.gridcontainer}>
           <div>
             <h2>Building Teams for Web3 Success</h2>
             <p>
@@ -26,11 +28,11 @@ const About = () => {
             </p>
           </div>
           <div>
-            <Image src="/team.jpg" alt="" width={120} height={100} />
+            <Image src="/success.jpg" alt="" width={120} height={100} />
           </div>
           {/*2 */}
           <div>
-            <Image src="/team.jpg" alt="" width={120} height={100} />
+            <Image src="/projects.jpg" alt="" width={120} height={100} />
           </div>
           <div>
             <h2>Launching Projects in the Web3 Ecosystem</h2>
@@ -46,7 +48,7 @@ const About = () => {
             </p>
           </div>
           <div>
-            <Image src="/team.jpg" alt="" width={120} height={100} />
+            <Image src="/code.jpg" alt="" width={120} height={100} />
           </div>
           {/*4 */}
           <div>
@@ -60,21 +62,65 @@ const About = () => {
           </div>
         </div>
       </section>
-      <section>
+      <section className={styles.center}>
         <h3>
           Take a look at our products
         </h3>
       </section>
-      <section>
-        <h2>
-          Join Forces with NewGenEarth
-        </h2>
-        <div>
+      <section className={styles.centersection}>
+        <div className={styles.sectionheader}>
+          <h2 className={styles.pleft}>
+            Join Forces with NewGenEarth
+          </h2>
+        </div>
+        <div className={styles.centertext}>
           <p>
             If you have a vision for a Web3 project, we invite you to join forces with NewGenEarth. Whether you are a blockchain enthusiast, an entrepreneur, or an organization looking to explore the potential of Web3, we are here to support you. Together, we can turn ideas into reality and contribute to the advancement of decentralized technologies.
           </p>
+          {/* <Image src="/maps.png" alt="" width={80} height={80} /> */}
+        </div>
+        <div className={styles.flex}>
+          <p>Want to learn more about us?</p>
+          <Link href={`mailto:${emailAddress}`}>
+            Contact Us
+          </Link> 
         </div>
       </section>
+      <footer className={styles.footer}>
+        <div className={styles.flexcontainer}>
+          <div>
+            <h4 className={styles.pblock}>
+              NewGenEarth
+            </h4>
+            <p className={styles.pbottom}>
+              <Link href="/about">About us</Link>
+            </p>
+            <p className={styles.pbottom}>
+              <Link href="/beltcoin">BeltCoin</Link>
+            </p>
+            <p className={styles.pbottom}>
+              <Link href="/equine-nft">EquineNFT</Link>
+            </p>
+            <p className={styles.pbottom}>
+              <Link href="/research-clear">Research Clear</Link>
+            </p>
+            <p className={styles.pbottom}>
+              <Link href="/rreel">RREEL</Link>
+            </p>
+          </div>
+          <div>
+            <h3 className={styles.blockend}>
+              NewGenEarth
+            </h3>
+            <button className={styles.btn}>
+              <Link href={`mailto:${emailAddress}`}>
+                Contact Us
+              </Link>  
+            </button>
+          </div>
+        </div>
+        <p className={styles.text}>&copy; NewGenEarth. All Rights Reserved</p>
+      </footer>
     </>
   );
 };
