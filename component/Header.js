@@ -44,6 +44,13 @@ export default function Header() {
             )}
           </li>
           <li>
+            {activeLink !== '/about' && (
+              <Link href="/about" onClick={() => handleLinkClick('/about')} className="link">
+                About
+              </Link>
+            )}
+          </li>
+          <li>
             {activeLink !== '/rreel' && (
               <Link href="/rreel" onClick={() => handleLinkClick('/rreel')} className="link">
                 RREEL
@@ -70,7 +77,14 @@ export default function Header() {
                 Belt coin
               </Link>
             )}
-          </li>          
+          </li>
+          <li>
+            {activeLink !== '/destiny-token' && (
+              <Link href="/destiny-token" onClick={() => handleLinkClick('/destiny-token')} className="link">
+                DestinyToken
+              </Link>
+            )}
+          </li>         
 
         </ul>
       </nav>

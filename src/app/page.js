@@ -29,7 +29,7 @@ export default function Home() {
             <Link href="/beltcoin">
               <Image src="/beltcoin.png" alt='Belt Coin Logo' width={80} height={80} />
             </Link>
-            <Link href="">
+            <Link href="/destiny-token">
               <Image src="/DESTINY.png" alt='Destiny Token Logo' width={80} height={80} />
             </Link>
             <Link href="/equine-nft">
@@ -61,6 +61,13 @@ export default function Home() {
             <Image src="/beltcoin.png" alt='Belt Coin Logo' width={80} height={80} />
             <h2>BeltCoin</h2>
             <p>BeltCoin is a revolutionary WEB3 startup with a vision to restore and preserve the Earths ecosystem while fostering bio diversity. The core focus is safeguarding keystone species within aquatic environments. Employing cutting edge hardware and leveraging cryptocurrency.</p>
+          </Link>
+          <Link href="/destiny-token" className='cover span'>
+            <Image src="/DESTINY.png" alt='Destiny Token Logo' width={80} height={80} />
+            <h2>Destiny Token</h2>
+            <p>
+              DestinyToken (DTP) is a stablecoin in the asset creation in DeFi category. DestinyToken addresses the challenges faced in the crypto market such as high volatility, managing multiple cryptocurrencies, and expensive prices which often lead to missed investment opportunities. By creating an indexed token backed by the top nine cryptocurrencies DestinyToken aims to provide a reliable and accessible solution to investors and traders. DestinyToken works on the principle of combining the value and stability of the top nine cryptocurrencies by market capitalisation
+            </p>
           </Link>
         </div>
       </section>
