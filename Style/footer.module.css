@@ -1,0 +1,89 @@
+.footer {
+  padding-inline: 60px;
+  padding-block: 4rem;
+  background-color: #f7f8eb;
+}
+
+.flexcontainer {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 1px;
+}
+
+.flexcontainer a {
+  text-decoration: none;
+  font-family: inherit;
+  font-size: calc(0.75rem + 0.5vw);
+  font-weight: 400;
+}
+
+.text {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.pblock {
+  padding-block-end: 1rem;
+  font-size: calc(1rem + 0.5vw);
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+
+}
+
+.pbottom {
+  padding-block-end: 0.5rem;
+}
+
+.pbottom a {
+  color: #000;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+}
+
+.blockend {
+  font-size: calc(1rem + 1vw);
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  padding-block-end: 1.5rem;
+}
+
+.btn {
+  padding: 0.8rem;
+  width: 180px;
+  border: 1px solid #000;
+  border-radius: 6px;
+  font-size: calc(0.75rem + 0.5vw);
+  font-weight: 400;
+  background-color: rgba(255, 255, 255, 0.04);
+}
+
+.btn a {
+  color: #000;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+}
+
+.btn:hover {
+  background-color: #ccd5ae;
+  border: 1px solid #f7f8eb;
+}
+
+@media screen and (min-device-width: 320px) and (max-device-width: 699px) {
+  .footer {
+    padding-inline: 1.5rem;
+    padding-block: 2rem;
+  }
+
+  .flexcontainer {
+    flex-direction: column;
+  }
+
+  .blockend {
+    display: none;
+  }
+
+  .btn {
+    margin-block-end: 1.5rem;
+  }
+}
