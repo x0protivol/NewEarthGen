@@ -41,6 +41,9 @@ export default function Home() {
           </div>
         ))}
         </div>
+        <div className='products-cover'>
+          <h3>Products</h3>
+        </div>
         <div className='grid-container'>
           <Link href="/rreel" className='cover'>
             <Image src="/rreel.jpg" alt="rrel logo" width={80} height={80} />

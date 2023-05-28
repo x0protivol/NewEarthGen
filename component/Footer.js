@@ -13,18 +13,6 @@ const Footer = () => {
           <p className={styles.pbottom}>
             <Link href="/about">About us</Link>
           </p>
-          <p className={styles.pbottom}>
-            <Link href="/beltcoin">BeltCoin</Link>
-          </p>
-          <p className={styles.pbottom}>
-            <Link href="/equine-nft">EquineNFT</Link>
-          </p>
-          <p className={styles.pbottom}>
-            <Link href="/research-clear">Research Clear</Link>
-          </p>
-          <p className={styles.pbottom}>
-            <Link href="/rreel">RREEL</Link>
-          </p>
         </div>
         <div>
           <h3 className={styles.blockend}>

@@ -92,10 +92,21 @@ section {
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(385px,1fr));
+  grid-template-columns: 1 fr 1fr;
   column-gap: 40px;
   padding-inline: 60px;
-  padding-block: 4rem;
+  padding-block: 2rem;
+}
+
+.products-cover {
+  margin-block-start: 2rem;
+  padding-inline: 60px;
+}
+
+.products-cover h3 {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  font-size: calc(1.25rem + 0.5vw);
 }
 
 .cover {
@@ -153,6 +164,10 @@ section {
 
   .grid-container {
     grid-template-columns: repeat(auto-fit,minmax(290px,1fr));
+    padding-inline: 15px;
+  }
+
+  .products-cover {
     padding-inline: 15px;
   }
 
