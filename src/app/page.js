@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Link from "next/link"
 import '../../Style/page.css';
 import ParticlesBackground from '../../component/Particles';
+import Footer from '../../component/Footer';
 
 export default function Home() {
   return (
@@ -10,9 +11,9 @@ export default function Home() {
         <ParticlesBackground />
         <div className='text-cover'>
           <h1 className='main-text'>
-            New Gen <br/> Earth
+            Bringing Blockchain Adoption To Billions
           </h1>
-          <p>Making the Earth a cleaner and better place one day at a time</p>
+          {/* <p>Making the Earth a cleaner and better place one day at a time</p> */}
         </div>
       </main>
       <section>
@@ -71,6 +72,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
+      <Footer />
     </>
   )
 }

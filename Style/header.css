@@ -42,7 +42,7 @@
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: calc(0.4rem + 0.5vw);
+  font-size: calc(0.75rem + 0.5vw);
 }
 
 @media screen and (min-device-width: 320px) and (max-device-width: 699px) {

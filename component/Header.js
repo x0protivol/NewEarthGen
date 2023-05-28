@@ -8,6 +8,8 @@ import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Header() {
+  const emailAddress = 'NewGenEarth@protonmail.com';
+
   const [activeLink, setActiveLink] = useState(null);
   const [navbarOpen, setNavbarOpen] = useState(false)
   const showNavBar = () => setNavbarOpen(!navbarOpen);
@@ -46,46 +48,18 @@ export default function Header() {
           <li>
             {activeLink !== '/about' && (
               <Link href="/about" onClick={() => handleLinkClick('/about')} className="link">
-                About
+                About Us
               </Link>
             )}
           </li>
-          <li>
-            {activeLink !== '/rreel' && (
-              <Link href="/rreel" onClick={() => handleLinkClick('/rreel')} className="link">
-                RREEL
-              </Link>
-            )} 
+          <li className="link">
+            Products
           </li>
           <li>
-            {activeLink !== '/research-clear' && (
-              <Link href="/research-clear" onClick={() => handleLinkClick('/research-clear')} className="link">
-                Research Clear
+              <Link href={`mailto:${emailAddress}`} className="link">
+                Contact Us
               </Link>
-            )}
-          </li>
-          <li>
-            {activeLink !== '/equine-nft' && (
-              <Link href="/equine-nft" onClick={() => handleLinkClick('/equine-nft')} className="link">
-                Equine NFT
-              </Link>
-            )}
-          </li>
-          <li>
-            {activeLink !== '/beltcoin' && (
-              <Link href="/beltcoin" onClick={() => handleLinkClick('/beltcoin')} className="link">
-                Belt coin
-              </Link>
-            )}
-          </li>
-          <li>
-            {activeLink !== '/destiny-token' && (
-              <Link href="/destiny-token" onClick={() => handleLinkClick('/destiny-token')} className="link">
-                DestinyToken
-              </Link>
-            )}
-          </li>         
-
+          </li>      
         </ul>
       </nav>
     </header>

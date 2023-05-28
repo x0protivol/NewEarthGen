@@ -2,6 +2,7 @@ import Link from "next/link";
 import styles from "../Style/footer.module.css"
 
 const Footer = () => {
+  const emailAddress = 'NewGenEarth@protonmail.com';
   return (
     <footer className={styles.footer}>
       <div className={styles.flexcontainer}>
