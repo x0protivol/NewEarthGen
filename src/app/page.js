@@ -11,7 +11,7 @@ export default function Home() {
         <ParticlesBackground />
         <div className='text-cover'>
           <h1 className='main-text'>
-            Bringing Blockchain Adoption To Billions
+            Real World Blockchain Applications
           </h1>
           {/* <p>Making the Earth a cleaner and better place one day at a time</p> */}
         </div>

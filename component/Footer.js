@@ -8,7 +8,7 @@ const Footer = () => {
       <div className={styles.flexcontainer}>
         <div>
           <h4 className={styles.pblock}>
-            NewGenEarth
+            New Earth Gen
           </h4>
           <p className={styles.pbottom}>
             <Link href="/about">About us</Link>
@@ -16,7 +16,7 @@ const Footer = () => {
         </div>
         <div>
           <h3 className={styles.blockend}>
-            NewGenEarth
+          New Earth Gen
           </h3>
           <button className={styles.btn}>
             <Link href={`mailto:${emailAddress}`}>
@@ -25,7 +25,7 @@ const Footer = () => {
           </button>
         </div>
       </div>
-      <p className={styles.text}>&copy; NewGenEarth. All Rights Reserved</p>
+      <p className={styles.text}>&copy; New Earth Gen. All Rights Reserved</p>
   </footer>
   );
 

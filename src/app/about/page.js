@@ -12,11 +12,11 @@ const About = () => {
           <h1 className={styles.pleft}>About Us</h1>
         </div>
         <div className={styles.areatwo}>
-          <h2>NewGenEarth - Team Building and Launching Projects in Web3</h2>
+          <h2>New Earth Gen - Team Building and Launching Projects in Web3</h2>
         </div>
         <div className={styles.area}>
           <p>
-            NewGenEarth is a dynamic team specializing in building and launching projects in the Web3 space. With a strong emphasis on innovation and a deep understanding of blockchain technology, we are dedicated to creating impactful solutions that leverage the power of decentralized systems.
+          New Earth Gen is a dynamic team specializing in building and launching projects in the Web3 space. With a strong emphasis on innovation and a deep understanding of blockchain technology, we are dedicated to creating impactful solutions that leverage the power of decentralized systems.
           </p>
         </div>
       </main>
@@ -25,7 +25,7 @@ const About = () => {
           <div>
             <h2>Building Teams for Web3 Success</h2>
             <p className={styles.gridparagraph}>
-              At NewGenEarth, we believe in the power of collaboration and the strength of a well-aligned team. We bring together talented individuals with diverse backgrounds and expertise, fostering a creative and inclusive environment. Our team-building approach ensures that we assemble the right skills and knowledge needed to tackle complex challenges in the Web3 landscape.
+              At New Earth Gen, we believe in the power of collaboration and the strength of a well-aligned team. We bring together talented individuals with diverse backgrounds and expertise, fostering a creative and inclusive environment. Our team-building approach ensures that we assemble the right skills and knowledge needed to tackle complex challenges in the Web3 landscape.
             </p>
           </div>
           <div>
@@ -45,7 +45,7 @@ const About = () => {
           <div>
             <h2>Navigating the Web3 Landscape</h2>
             <p className={styles.gridparagraph}>
-              The Web3 space is constantly evolving, and staying ahead of the curve is paramount. Our team at NewGenEarth is committed to continuous learning and exploration. We stay up to date with the latest advancements in blockchain technology, smart contracts, decentralized finance (DeFi), and other Web3 trends. This allows us to identify opportunities, mitigate risks, and provide valuable insights to our partners.
+              The Web3 space is constantly evolving, and staying ahead of the curve is paramount. Our team at New Earth Gen is committed to continuous learning and exploration. We stay up to date with the latest advancements in blockchain technology, smart contracts, decentralized finance (DeFi), and other Web3 trends. This allows us to identify opportunities, mitigate risks, and provide valuable insights to our partners.
             </p>
           </div>
           <div>
@@ -71,12 +71,12 @@ const About = () => {
       <section className={styles.centersection}>
         <div className={styles.sectionheader}>
           <h2 className={styles.pleft}>
-            Join Forces with NewGenEarth
+            Join Forces with New Earth Gen
           </h2>
         </div>
         <div className={styles.centertext}>
           <p>
-            If you have a vision for a Web3 project, we invite you to join forces with NewGenEarth. Whether you are a blockchain enthusiast, an entrepreneur, or an organization looking to explore the potential of Web3, we are here to support you. Together, we can turn ideas into reality and contribute to the advancement of decentralized technologies.
+            If you have a vision for a Web3 project, we invite you to join forces with New Earth Gen. Whether you are a blockchain enthusiast, an entrepreneur, or an organization looking to explore the potential of Web3, we are here to support you. Together, we can turn ideas into reality and contribute to the advancement of decentralized technologies.
           </p>
           {/* <Image src="/maps.png" alt="" width={80} height={80} /> */}
         </div>

@@ -22,7 +22,7 @@ export default function Header() {
     <header className="header">
       <nav className="nav">
         <div className="logoFlex">
-          <Image src='/new_gen_earth_logo.png' alt="New Gen Earth Logo" width={200} height={130} />
+          <Image src='/new_earth_gen_logo.png' alt="New Gen Earth Logo" width={200} height={130} />
         </div>
         <div onClick={showNavBar}>
           <FontAwesomeIcon

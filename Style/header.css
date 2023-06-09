@@ -2,7 +2,7 @@
 
 :root {
   --shadeOfGreen: #132a13;
-  --shadeOfWhite: #f7f8eb;
+  --shadeOfWhite: hsl(65, 46%, 95%);
 }
 
 #menu,
