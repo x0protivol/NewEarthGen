@@ -23,7 +23,7 @@ const About = () => {
       <section>
         <div className={styles.gridcontainer}>
           <div>
-            <h2>Building Teams for Web3 Success</h2>
+            <h2>Building Projects for Web3 Success</h2>
             <p className={styles.gridparagraph}>
               At New Earth Gen, we believe in the power of collaboration and the strength of a well-aligned team. We bring together talented individuals with diverse backgrounds and expertise, fostering a creative and inclusive environment. Our team-building approach ensures that we assemble the right skills and knowledge needed to tackle complex challenges in the Web3 landscape.
             </p>
@@ -38,7 +38,7 @@ const About = () => {
           <div className={styles.ordertwo}>
             <h2>Launching Projects in the Web3 Ecosystem</h2>
             <p className={styles.gridparagraph}>
-              Our primary focus is on ideating, developing, and launching projects within the Web3 ecosystem. From decentralized applications (dApps) to blockchain-based platforms, we aim to create innovative solutions that empower individuals and transform industries. With a deep understanding of various blockchain protocols and their capabilities, we leverage the decentralized nature of Web3 to build secure, transparent, and scalable projects.
+              Our primary focus is on brainstorming, developing, and launching projects within the Web3 ecosystem. From decentralized applications (dApps) to blockchain-based platforms, we aim to create innovative solutions that empower individuals and transform industries. With a deep understanding of various blockchain protocols and their capabilities, we leverage the decentralized nature of Web3 to build secure, transparent, and scalable projects.
             </p>
           </div>
           {/*3 */}
