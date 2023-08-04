@@ -2,7 +2,7 @@
 import ReactPlayer from "react-player";
 
 const DestinyToken = () => {
-  const videoUrl = 'https://vimeo.com/829961012?share=copy';
+  const videoUrl = ;
   return (
     <main className="main">
     <div>
