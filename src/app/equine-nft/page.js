@@ -4,7 +4,7 @@ import ReactPlayer from "react-player";
 import "../../../Style/rreel.css";
 
 const EquineNft = () => {
-  const videoUrl = 'https://vimeo.com/830340448?share=copy';
+  const videoUrl = ;
   return (
     <main className="main">
       <div>
