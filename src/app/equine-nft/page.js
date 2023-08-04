@@ -4,7 +4,6 @@ import ReactPlayer from "react-player";
 import "../../../Style/rreel.css";
 
 const EquineNft = () => {
-  const videoUrl = ;
   return (
     <main className="main">
       <div>
@@ -17,19 +16,10 @@ const EquineNft = () => {
           EquineNFTs incorporate microchip &  QR code technology, enabling horse owners to easily create and manage their horse ownership NFTs on-chain. This technology provides a secure and reliable way of establishing ownership and ensuring the safety of horses. It offers a roadmap for a comprehensive breeding platform that includes staking, betting, and trading marketplaces. With a focus on innovation, security, and user experience, offering a one-stop shop for all things related to horse ownership, breeding, and trading along with staking of NFTs for creating an additional revenue stream for horse owners.
           EquineNFT&apos;s platform enables horse owners to upload detailed information and images of their horses, which can be easily accessed and viewed by potential buyers. By allowing horse owners to showcase their horses in a visually appealing and informative way. It helps them to increase the chances of finding the right buyers. Horse owners can add a range of details about their horses, such as age, breed, gender, height, color, and temperament, along with multiple images.
         </p>
-        <div className="m-bottom">
-          <ReactPlayer
-            url={videoUrl} 
-            controls={true}
-            playing={true} 
-            width='100%'
-            height='100%'
-          />
-        </div>
-
       </div>
-  </main>
+    </main>
   );
 };
 
 export default EquineNft;
+
