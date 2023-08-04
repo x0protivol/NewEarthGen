@@ -1,10 +1,7 @@
 'use client'
-import ReactPlayer from "react-player";
 import "../../../Style/rreel.css";
 
 const Rreel = () => {
-  const videoUrl = ;
-
   return (
     <main className="main">
       <div>
@@ -18,18 +15,10 @@ const Rreel = () => {
           While RREEL Inc builds the theatre tech, developers build the vibrant ecosystem of applications that connect communities and create new avenues for permissionless participation.
           RREEL is a permissionless ecosystem for the preservation of memories through theaters . The platform provides the infrastructure for issuers to mint and distribute digital collectables that mark memorable moments and movies , while rewarding them with tokens.
         </p>
-        <div className="m-bottom">
-          <ReactPlayer
-          url={videoUrl} 
-          controls={true}
-          playing={true} 
-          width='100%'
-          height='100%'
-          />
-        </div>
       </div>
     </main>
   )
 }
 
 export default Rreel;
+
