@@ -9,7 +9,7 @@ const BeltCoin = () => {
       <div> 
         <h2 className="heading-text">Introduction</h2> 
         <p className="p-text"> 
-          BeltCoin is a revolutionary WEB3 startup with a vision to restore and preserve the Earth's ecosystem while fostering biodiversity. The core focus is safeguarding keystone species within aquatic environments. Employing cutting-edge hardware and leveraging cryptocurrency, Beltcoin utilises an advanced hardware system designed to purify water for the benefit of single-cell organisms, creating optimised environments that foster the growth and conservation of keystone species. This ensures the delicate balance of the ecosystem remains intact.
+          BeltCoin is a revolutionary Web3 startup with a vision to restore and preserve the Earth's ecosystem while fostering biodiversity. The core focus is safeguarding keystone species within aquatic environments. Employing cutting-edge hardware and leveraging cryptocurrency, Beltcoin utilises an advanced hardware system designed to purify water for the benefit of single-cell organisms, creating optimised environments that foster the growth and conservation of keystone species. This ensures the delicate balance of the ecosystem remains intact.
         </p> 
         <div className="m-bottom"> 
           <ReactPlayer 
