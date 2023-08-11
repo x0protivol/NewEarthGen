@@ -1,4 +1,3 @@
-'use client' 
 import ReactPlayer from "react-player";
 import "../../../Style/rreel.css";
 
@@ -39,3 +38,4 @@ const Omnifinery = () => {
 };
 
 export default Omnifinery;
+
