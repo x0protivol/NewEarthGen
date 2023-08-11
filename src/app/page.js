@@ -65,6 +65,31 @@ export default function Home() {
             <h2>BeltCoin</h2>
             <p>BeltCoin is a revolutionary WEB3 startup with a vision to restore and preserve the Earths ecosystem while fostering bio diversity. The core focus is safeguarding keystone species within aquatic environments. Employing cutting edge hardware and leveraging cryptocurrency.</p>
           </Link>
+             <Link href="/vibrateDNA" className='cover'>
+            <Image src="/vibrateDNA1.png" alt="vibrateDNA logo" width={80} height={80} />
+            <h2>vibrateDNA</h2>
+            <p>vibrateDNA introduces an innovative web3 platform, blending advanced tech with the spheres of health and well-being.</p>
+          </Link>
+          <Link href="/FarmCoin" className='cover'>
+            <Image src="/FarmCoin.png" alt="Farm logo" width={80} height={80} />
+            <h2>Farm Coin</h2>
+            <p>Farm coin is a digital currency designed to address challenges in the agricultural and farming sectors.</p>
+          </Link>
+          <Link href="/FreedomGuard" className='cover'>
+            <Image src="/Freedomguard.png" alt="FreedomGuard logo" width={80} height={80} />
+            <h2>FreedomGuard</h2>
+            <p>FreedomGuard provides a fast peer-to-peer anti-trafficking solution, supported by DAO-driven fundraising and assistance for victims, strengthened by web3 and AI-enhanced data protection.</p>
+          </Link>
+            <Link href="/Omnifinery" className='cover'>
+            <Image src="/omnifinery.png" alt="Omnifinery logo" width={80} height={80} />
+            <h2>Omnifinery</h2>
+            <p>Omnifinery pioneers the digital transformation of the fashion sector, surpassing tangible boundaries through web3.</p>
+          </Link>
+             <Link href="/TimeCoin" className='cover'>
+            <Image src="/Time Coin.png" alt="TimeCoin logo" width={80} height={80} />
+            <h2>Time Coin</h2>
+            <p>Time coin is a cryptocurrency based on time, presenting a Universal Basic Income approach.</p>
+          </Link>
           <Link href="/destiny-token" className='cover span'>
             <Image src="/DESTINY.png" alt='Destiny Token Logo' width={80} height={80} />
             <h2>Destiny Token</h2>
