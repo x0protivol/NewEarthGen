@@ -45,7 +45,7 @@ export default function Home() {
               <Image src="/omnifinery.png" alt='Omnifinery Logo' width={80} height={80} />
             </Link>
             <Link href="/TimeCoin">
-              <Image src="/Time Coin (1) (1).jpg" alt='TimeCoin Logo' width={80} height={80} />
+              <Image src="/Time Coin (1) (1).png" alt='TimeCoin Logo' width={80} height={80} />
             </Link>
     
           </div>
@@ -97,7 +97,7 @@ export default function Home() {
             <p>Omnifinery pioneers the digital transformation of the fashion sector, surpassing tangible boundaries through web3.</p>
           </Link>
              <Link href="/TimeCoin" className='cover'>
-            <Image src="/Time Coin (1) (1).jpg" alt="TimeCoin logo" width={80} height={80} />
+            <Image src="/Time Coin (1) (1).png" alt="TimeCoin logo" width={80} height={80} />
             <h2>Time Coin</h2>
             <p>Time coin is a cryptocurrency based on time, presenting a Universal Basic Income approach.</p>
           </Link>
