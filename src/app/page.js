@@ -35,7 +35,18 @@ export default function Home() {
             <Link href="/equine-nft">
               <Image src="/equinenft.png" alt='EquineNFT Logo' width={80} height={80} />
             </Link>
-            
+            <Link href="/FarmCoin">
+              <Image src="/FarmCoin.png" alt='FarmCoin Logo' width={80} height={80} />
+            </Link>
+            <Link href="/FreedomGuard">
+              <Image src="/Freedomguard.png" alt='FreedomGuard Logo' width={80} height={80} />
+            </Link>
+            <Link href="/Omnifinery">
+              <Image src="/omnifinery.png" alt='Omnifinery Logo' width={80} height={80} />
+            </Link>
+            <Link href="/TimeCoin">
+              <Image src="/Time Coin.png" alt='TimeCoin Logo' width={80} height={80} />
+            </Link>
     
           </div>
         ))}
