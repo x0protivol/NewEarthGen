@@ -11,7 +11,7 @@ const Omnifinery = () => {
           <h2 className="heading-text">Introduction</h2>
         </header>
         <p className="p-text">
-          Omnifinery spearheads the fashion industry's digital evolution, transcending physical limitations using web3.
+          Omnifinery spearheads the fashion industry digital evolution, transcending physical limitations using web3.
         </p>
       </section>
 
@@ -20,7 +20,7 @@ const Omnifinery = () => {
           <h2 className="heading-text">Overview</h2>
         </header>
         <p className="p-text">
-        Omnifinery is a web3 "Phygital" platform, merging digital and physical realms with NFTs for clothing, curating a blend of renowned and emerging talents, entirely in-house, it offers a unique blend of art, fashion, and collectibles.
+        Omnifinery is a web3 Phygital platform, merging digital and physical realms with NFTs for clothing, curating a blend of renowned and emerging talents, entirely in house, it offers a unique blend of art, fashion, and collectibles.
         </p>
       </section>
 
