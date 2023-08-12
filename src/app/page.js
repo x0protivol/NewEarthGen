@@ -101,7 +101,7 @@ export default function Home() {
             <h2>Time Coin</h2>
             <p>Time coin is a cryptocurrency based on time, presenting a Universal Basic Income approach.</p>
           </Link>
-          <Link href="/destiny-token" className='cover span'>
+          <Link href="/destiny-token" className='cover'>
             <Image src="/DESTINY.png" alt='Destiny Token Logo' width={80} height={80} />
             <h2>Destiny Token</h2>
             <p>
