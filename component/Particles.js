@@ -108,6 +108,3 @@ const ParticlesBackground = () => {
 };
 
 export default ParticlesBackground;
-
-
-export default ParticlesBackground;
