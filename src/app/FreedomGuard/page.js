@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import "../../../Style/rreel.css";
 
 const FreedomGuard = () => {
-  const videoUrl = 'https://vimeo.com/853805718?share=copy';
+  const videoUrl = 'https://vimeo.com/853986565?share=copy';
 
   return (
     <main className="main">
