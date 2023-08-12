@@ -52,12 +52,14 @@ export default function Header() {
               </Link>
             )}
           </li>
-          <li className="link">
-            Products
+          <li>
+            <a href="#products-section" className="link" onClick={() => handleLinkClick('#products-section')}>
+              Products
+            </a>
           </li>
           <li>
-              <Link href={`mailto:${emailAddress}`} className="link">
-                Contact Us
+            <Link href={`mailto:${emailAddress}`} className="link">
+              Contact Us
               </Link>
           </li>      
         </ul>
