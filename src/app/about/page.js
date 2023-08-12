@@ -64,10 +64,15 @@ const About = () => {
         </div>
       </section>
       <section className={styles.center}>
-        <h3>
-          Take a look at our products
-        </h3>
-      </section>
+  <Link href="/#products-section">
+    <a>
+      <h3>
+        Take a look at our products
+      </h3>
+    </a>
+  </Link>
+</section>
+
       <section className={styles.centersection}>
         <div className={styles.sectionheader}>
           <h2 className={styles.pleft}>
