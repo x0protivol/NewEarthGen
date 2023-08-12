@@ -20,7 +20,7 @@ const ParticlesBackground = () => {
   }, []);
 
   return (
-    <div id="particles-container">
+    <div id="particles-container" style={{ zIndex: -1 }}>
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -106,5 +106,8 @@ const ParticlesBackground = () => {
     </div>
   );
 };
+
+export default ParticlesBackground;
+
 
 export default ParticlesBackground;
