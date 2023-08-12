@@ -21,7 +21,7 @@ const vibrateDNA = () => {
           <h2 className="heading-text">Overview</h2>
         </header>
         <p className="p-text">
-      vibrateDNA pioneers proactive health monitoring and personalized well-being recommendations,this platform not only incentivizes users with cryptocurrency rewards for wearing the device and engaging in healthy activities but also revolutionizes the health industry by empowering individuals to take charge of their health. .
+      vibrateDNA pioneers proactive health monitoring and personalized well-being recommendations, this platform not only incentivizes users with cryptocurrency rewards for wearing the device and engaging in healthy activities but also revolutionizes the health industry by empowering individuals to take charge of their health. .
         </p>
       </section>
 
