@@ -51,7 +51,7 @@ export default function Home() {
           </div>
         ))}
         </div>
-        <div className='products-cover'>
+        <div className='products-cover' id='products-section'>
           <h3>Products</h3>
         </div>
         <div className='grid-container'>
