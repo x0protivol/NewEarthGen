@@ -16,9 +16,15 @@ export default function Home() {
         </div>
       </main>
       <section>
-        <div className='slider'>
-        {[...Array(4)].map((_, index) => (
-          <div className='slide-track' key={index}>
+        <div className='slider' style={{ 
+    backgroundSize: 'cover', 
+    backgroundPosition: 'center',
+    position: 'relative' 
+}}>
+    <ParticlesBackground />
+    
+    {[...Array(4)].map((_, index) => (
+        <div className='slide-track' key={index}>
             <Link href="/research-clear">
               <Image src="/ResearchClear.png" alt='Research Clear Logo' width={80} height={80} />
             </Link>
