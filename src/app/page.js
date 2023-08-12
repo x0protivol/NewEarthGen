@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Link from "next/link"
+import Link from "next/link";
 import '../../Style/page.css';
 import ParticlesBackground from '../../component/Particles';
 import Footer from '../../component/Footer';
@@ -17,14 +17,14 @@ export default function Home() {
       </main>
       <section>
         <div className='slider' style={{ 
-    backgroundSize: 'cover', 
-    backgroundPosition: 'center',
-    position: 'relative' 
-}}>
-    <ParticlesBackground />
-    
-    {[...Array(4)].map((_, index) => (
-        <div className='slide-track' key={index}>
+            backgroundSize: 'cover', 
+            backgroundPosition: 'center',
+            position: 'relative' 
+        }}>
+            <ParticlesBackground />
+            
+            {[...Array(4)].map((_, index) => (
+                <div className='slide-track' key={index} style={{ zIndex: 1 }}>
             <Link href="/research-clear">
               <Image src="/ResearchClear.png" alt='Research Clear Logo' width={80} height={80} />
             </Link>
