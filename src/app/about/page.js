@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useRouter } from "next/router";
 import styles from "../../../Style/about.module.css";
 import Footer from "../../../component/Footer";
 
