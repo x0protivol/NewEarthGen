@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "../../../Style/about.module.css";
 import Footer from "../../../component/Footer";
 
@@ -64,14 +65,14 @@ const About = () => {
         </div>
       </section>
       <section className={styles.center}>
-  <Link href="/#products-section">
-    <a>
-      <h3>
-        Take a look at our products
-      </h3>
-    </a>
-  </Link>
-</section>
+        <Link href="/#products-section">
+          <a>
+            <h3>
+              Take a look at our products
+            </h3>
+          </a>
+        </Link>
+      </section>
 
       <section className={styles.centersection}>
         <div className={styles.sectionheader}>
