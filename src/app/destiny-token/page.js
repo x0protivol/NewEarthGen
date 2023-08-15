@@ -1,6 +1,6 @@
 'use client'; 
 import React from 'react';  // React must be imported to use JSX
-
+import "../../../Style/rreel.css";
 const DestinyToken = () => {
   return (
     <main className="main">
