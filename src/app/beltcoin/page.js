@@ -1,5 +1,6 @@
 'use client'; 
 import ReactPlayer from "react-player";
+import "../../../Style/rreel.css";
 
 const BeltCoin = () => {
   const videoUrl = 'https://vimeo.com/829918389?share=copy';
