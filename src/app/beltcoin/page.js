@@ -10,7 +10,7 @@ const BeltCoin = () => {
           <h2 className="heading-text">Introduction</h2>
         </header>
         <p className="p-text">
-          BeltCoin is a Web3 startup leveraging cryptocurrency and advanced hardware to preserve Earth's aquatic ecosystems by safeguarding keystone species and promoting biodiversity.
+          BeltCoin is a Web3 startup leveraging cryptocurrency and advanced hardware.
         </p>
       </section>
     </main>
