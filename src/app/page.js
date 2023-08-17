@@ -1,13 +1,15 @@
 import Image from 'next/image';
-import Link from "next/link"
+import Link from "next/link";
+import { useState, useEffect } from 'react';
 import '../../Style/page.css';
 import ParticlesBackground from '../../component/Particles';
 import Footer from '../../component/Footer';
 
 export default function Home() {
+  const [filteredStatus, setFilteredStatus] = useState('planned');
 
   const projects = [
-    { href: "/research-clear", src: "/ResearchClear.png", alt: "Research Clear Logo", name: "Research Clear", status: "planned" },
+    href: "/research-clear", src: "/ResearchClear.png", alt: "Research Clear Logo", name: "Research Clear", status: "planned" },
     { href: "/rreel", src: "/rreel.jpg", alt: "RREEL Logo", name: "RREEL", status: "planned" },
     { href: "/beltcoin", src: "/beltcoin.png", alt: "Belt Coin Logo", name: "BeltCoin", status: "planned" },
     { href: "/destiny-token", src: "/DESTINY.png", alt: "Destiny Token Logo", name: "Destiny Token", status: "planned" },
@@ -19,19 +21,9 @@ export default function Home() {
     // ... add other projects here with their respective status
   ];
 
-  function filterProjects(status) {
-    const allProjects = document.querySelectorAll('.cover');
-    allProjects.forEach(project => {
-      if (status === 'all' || project.dataset.status === status) {
-        project.style.display = 'block';
-      } else {
-        project.style.display = 'none';
-      }
-    });
-  }
-
-  // Call the filter function immediately after defining it to set the default state
-  filterProjects('planned');
+  useEffect(() => {
+    setFilteredStatus('planned');
+  }, []);
 
   return (
     <>
@@ -45,14 +37,14 @@ export default function Home() {
       </main>
       <section>
         <div className="filter">
-          <button onClick={() => filterProjects('all')}>All</button>
-          <button onClick={() => filterProjects('planned')} style={{ fontWeight: 'bold' }}>Planned</button>
-          <button onClick={() => filterProjects('in development')}>In Development</button>
-          <button onClick={() => filterProjects('completed')}>Completed</button>
+          <button onClick={() => setFilteredStatus('all')}>All</button>
+          <button onClick={() => setFilteredStatus('planned')} style={{ fontWeight: filteredStatus === 'planned' ? 'bold' : 'normal' }}>Planned</button>
+          <button onClick={() => setFilteredStatus('in development')}>In Development</button>
+          <button onClick={() => setFilteredStatus('completed')}>Completed</button>
         </div>
         <div className='grid-container'>
-          {projects.map(project => (
-            <Link href={project.href} className='cover' key={project.href} data-status={project.status}>
+          {projects.filter(project => filteredStatus === 'all' || project.status === filteredStatus).map(project => (
+            <Link href={project.href} className='cover' key={project.href}>
               <Image src={project.src} alt={project.alt} width={80} height={80} />
               <h2>{project.name}</h2>
             </Link>
@@ -64,4 +56,5 @@ export default function Home() {
   )
 }
 
-    
+
+
