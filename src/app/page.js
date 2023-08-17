@@ -1,5 +1,6 @@
 import dynamic from 'next/dynamic';
 import '../../Style/page.css';
+import withClient from './path-to-withClient';
 import ParticlesBackground from '../../component/Particles';
 import Footer from '../../component/Footer';
 
@@ -29,4 +30,6 @@ export default function Home() {
     </>
   );
 }
+
+export default withClient(Home);
 
