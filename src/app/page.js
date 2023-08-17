@@ -1,12 +1,13 @@
 import Image from 'next/image';
 import Link from "next/link";
-import { useState } from 'react';
+import { useRouter } from 'next/router';
 import '../../Style/page.css';
 import ParticlesBackground from '../../component/Particles';
 import Footer from '../../component/Footer';
 
 export default function Home() {
-  const [filter, setFilter] = useState('planned'); // default is 'planned'
+  const router = useRouter();
+  const filter = router.query.filter || 'planned';
 
   const projects = [
     { path: "/rreel", alt: "rrel logo", name: "RREEL", status: "planned" },
@@ -19,9 +20,16 @@ export default function Home() {
     { path: "/Omnifinery", alt: "Omnifinery logo", name: "Omnifinery", status: "planned" },
     { path: "/TimeCoin", alt: "TimeCoin logo", name: "Time Coin", status: "planned" },
     { path: "/destiny-token", alt: 'Destiny Token Logo', name: "Destiny Token", status: "planned" }
-  ];
+ ];
 
   const filteredProjects = projects.filter(project => project.status === filter);
+
+  const handleFilterChange = (newFilter) => {
+    router.push({
+      pathname: router.pathname,
+      query: { ...router.query, filter: newFilter }
+    });
+  };
 
   return (
     <>
@@ -33,18 +41,20 @@ export default function Home() {
           </h1>
         </div>
       </main>
+
       <section>
         <div className='slider'>
-        {[...Array(4)].map((_, index) => (
-          <div className='slide-track' key={index}>
-            {filteredProjects.map(project => (
-              <Link key={project.path} href={project.path}>
-                <Image src={`${project.path}.png`} alt={project.alt} width={80} height={80} />
-              </Link>
-            ))}
-          </div>
-        ))}
+          {[...Array(4)].map((_, index) => (
+            <div className='slide-track' key={index}>
+              {filteredProjects.map(project => (
+                <Link key={project.path} href={project.path}>
+                  <Image src={`${project.path}.png`} alt={project.alt} width={80} height={80} />
+                </Link>
+              ))}
+            </div>
+          ))}
         </div>
+
         <div className='products-cover' id='products-section'>
           <h3>Products</h3>
           <div>
@@ -53,7 +63,7 @@ export default function Home() {
                 type="radio"
                 value="planned"
                 checked={filter === 'planned'}
-                onChange={() => setFilter('planned')}
+                onChange={() => handleFilterChange('planned')}
               />
               Projects Planned
             </label>
@@ -62,12 +72,13 @@ export default function Home() {
                 type="radio"
                 value="development"
                 checked={filter === 'development'}
-                onChange={() => setFilter('development')}
+                onChange={() => handleFilterChange('development')}
               />
               Projects in Development
             </label>
           </div>
         </div>
+
         <div className='grid-container'>
           {filteredProjects.map(project => (
             <Link key={project.path} href={project.path} className='cover'>
@@ -77,6 +88,7 @@ export default function Home() {
           ))}
         </div>
       </section>
+
       <Footer />
     </>
   )
