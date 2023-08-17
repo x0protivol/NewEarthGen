@@ -1,6 +1,6 @@
 import dynamic from 'next/dynamic';
 import '../../Style/page.css';
-import withClient from './path-to-withClient';
+import withClient from './withClient'; // Make sure the path is correct
 import ParticlesBackground from '../../component/Particles';
 import Footer from '../../component/Footer';
 
@@ -10,7 +10,7 @@ const FilterableProjects = dynamic(() => import('./FilterableProjects'), {
   loading: () => <p>Loading...</p> // Optional loading component
 });
 
-export default function Home() {
+function Home() {
   return (
     <>
       <main className='home-main'>
@@ -32,4 +32,5 @@ export default function Home() {
 }
 
 export default withClient(Home);
+
 
