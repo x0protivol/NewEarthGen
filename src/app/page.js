@@ -8,8 +8,8 @@ import Footer from '../../component/Footer';
 export default function Home() {
   const [filteredStatus, setFilteredStatus] = useState('planned');
 
-  const projects = [
-    href: "/research-clear", src: "/ResearchClear.png", alt: "Research Clear Logo", name: "Research Clear", status: "planned" },
+ const projects = [
+    { href: "/research-clear", src: "/ResearchClear.png", alt: "Research Clear Logo", name: "Research Clear", status: "planned" },
     { href: "/rreel", src: "/rreel.jpg", alt: "RREEL Logo", name: "RREEL", status: "planned" },
     { href: "/beltcoin", src: "/beltcoin.png", alt: "Belt Coin Logo", name: "BeltCoin", status: "planned" },
     { href: "/destiny-token", src: "/DESTINY.png", alt: "Destiny Token Logo", name: "Destiny Token", status: "planned" },
@@ -19,7 +19,8 @@ export default function Home() {
     { href: "/Omnifinery", src: "/omnifinery.png", alt: "Omnifinery Logo", name: "Omnifinery", status: "planned" },
     { href: "/TimeCoin", src: "/time3.png", alt: "TimeCoin Logo", name: "Time Coin", status: "planned" },
     // ... add other projects here with their respective status
-  ];
+];
+
 
   useEffect(() => {
     setFilteredStatus('planned');
