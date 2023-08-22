@@ -1,6 +1,6 @@
-import { useReducer } from 'react';
 import Image from 'next/image';
-import Link from 'next/link';
+import Link from "next/link";
+import { useReducer } from 'react';
 import '../../Style/page.css';
 import ParticlesBackground from '../../component/Particles';
 import Footer from '../../component/Footer';
@@ -20,70 +20,88 @@ const projectData = [
 ];
 
 
-// Reducer for filter component
 const initialState = { status: 'all' };
 
 function reducer(state, action) {
-  switch (action.type) {
-    case 'setStatus':
-      return { ...state, status: action.status };
-    default:
-      throw new Error();
-  }
-}
-
-const Filters = ({ data, setData }) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
-
-  const handleStatusChange = event => {
-    const status = event.target.value;
-    dispatch({ type: 'setStatus', status });
-    if (status === 'all') {
-      setData(data);
-    } else {
-      setData(data.filter(project => project.status === status));
+    switch (action.type) {
+        case 'setStatus':
+            return { ...state, status: action.status };
+        default:
+            throw new Error();
     }
-  };
-
-  return (
-    <div>
-      <label htmlFor="status">Status:</label>
-      <select id="status" value={state.status} onChange={handleStatusChange}>
-        <option value="all">All</option>
-        <option value="planned">Planned</option>
-        <option value="completed">Completed</option>
-      </select>
-    </div>
-  );
-};
+}
 
 export default function Home() {
-  const [filteredProjects, setFilteredProjects] = useReducer(reducer, projectData);
+    const [state, dispatch] = useReducer(reducer, initialState);
 
-  return (
-    <>
-      <main className='home-main'>
-        <ParticlesBackground />
-        <div className='text-cover'>
-          <h1 className='main-text'>
-            Real World Blockchain Applications
-          </h1>
-        </div>
-      </main>
-      <section>
-        <Filters data={projectData} setData={setFilteredProjects} />
-        
-        <div className='grid-container'>
-            {filteredProjects.map(project => (
-                <Link href={`/${project.name.toLowerCase()}`} className='cover' key={project.name}>
-                    <Image src={project.src} alt={`${project.name} logo`} width={80} height={80} />
-                    <h2>{project.name}</h2>
-                    <p>{project.description}</p>
-                </Link>
-            ))}
-        </div>
-      </section>
-      <Footer />
-    </>
-  );
+    const filteredProjects = state.status === 'all' ? projectData : projectData.filter(project => project.status === state.status);
+
+    return (
+        <>
+            <main className='home-main'>
+                <ParticlesBackground />
+                <div className='text-cover'>
+                    <h1 className='main-text'>
+                        Real World Blockchain Applications
+                    </h1>
+                </div>
+            </main>
+            <section>
+                <div className='slider'>
+                    {[...Array(4)].map((_, index) => (
+                        <div className='slide-track' key={index}>
+                            <Link href="/research-clear">
+                                <Image src="/ResearchClear.png" alt='Research Clear Logo' width={80} height={80} />
+                            </Link>
+                            <Link href="/rreel">
+                                <Image src="/rreel.jpg" alt='RREEL Logo' width={80} height={80} />
+                            </Link>
+                            <Link href="/beltcoin">
+                                <Image src="/beltcoin.png" alt='Belt Coin Logo' width={80} height={80} />
+                            </Link>
+                            <Link href="/destiny-token">
+                                <Image src="/DESTINY.png" alt='Destiny Token Logo' width={80} height={80} />
+                            </Link>
+                            <Link href="/equine-nft">
+                                <Image src="/equinenft.png" alt='EquineNFT Logo' width={80} height={80} />
+                            </Link>
+                            <Link href="/FarmCoin">
+                                <Image src="/FarmCoin.png" alt='FarmCoin Logo' width={80} height={80} />
+                            </Link>
+                            <Link href="/FreedomGuard">
+                                <Image src="/Freedomguard.png" alt='FreedomGuard Logo' width={80} height={80} />
+                            </Link>
+                            <Link href="/Omnifinery">
+                                <Image src="/omnifinery.png" alt='Omnifinery Logo' width={80} height={80} />
+                            </Link>
+                            <Link href="/TimeCoin">
+                                <Image src="/time3.png" alt='TimeCoin Logo' width={80} height={80} />
+                            </Link>
+                        </div>
+                    ))}
+                </div>
+                <div className='products-cover' id='products-section'>
+                    <h3>Products</h3>
+                    <label htmlFor="status">Status:</label>
+                    <select id="status" value={state.status} onChange={event => dispatch({ type: 'setStatus', status: event.target.value })}>
+                        <option value="all">All</option>
+                        <option value="planned">Planned</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <div className='grid-container'>
+                    {filteredProjects.map(project => (
+                        <Link href={`/${project.name.toLowerCase()}`} className='cover' key={project.name}>
+                            <Image src={project.src} alt={`${project.name} logo`} width={80} height={80} />
+                            <h2>{project.name}</h2>
+                            <p>{project.description}</p>
+                        </Link>
+                    ))}
+                </div>
+            </section>
+            <Footer />
+        </>
+    )
 }
+
+
