@@ -1,7 +1,7 @@
 'use client'; 
 import ReactPlayer from "react-player"; 
 const EquineNft = () => { 
-  const videoUrl = 'https://vimeo.com/830340448?share=copy'; 
+  const videoUrl = 'https://vimeo.com/858177846?share=copy'; 
  
   return ( 
     <main className="main"> 
