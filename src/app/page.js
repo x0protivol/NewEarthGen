@@ -1,44 +1,31 @@
- import Image from 'next/image';
+import Image from 'next/image';
 import Link from "next/link";
 import '../../Style/page.css';
 import ParticlesBackground from '../../component/Particles';
 import Footer from '../../component/Footer';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
+import dynamic from 'next/dynamic';
 
-const ProductFilter = ({ setFilter }) => {
-    useEffect(() => { // This ensures the dropdown renders client-side
-        setFilter('all'); // 'all', 'inDevelopment', 'completed'
-    }, []);
-
-    const handleFilterChange = (e) => {
-        setFilter(e.target.value);
-    };
-
-    return (
-        <select onChange={handleFilterChange}>
-            <option value="all">All Projects</option>
-            <option value="inDevelopment">Projects in Development</option>
-            <option value="completed">Projects Completed</option>
-        </select>
-    );
-};
+// Dynamically import the ProductFilter component
+const ProductFilter = dynamic(() => import('./ProductFilter'), {
+  ssr: false, // This ensures the component only renders on the client side
+});
 
 export default function Home() {
-    const [filter, setFilter] = useState(null); // Initially set to null to prevent rendering server-side
+    const [filter, setFilter] = useState('all'); // Initialize to 'all' by default
 
-   const projectsStatus = {
-    rreel: 'inDevelopment',
-    researchClear: 'inDevelopment',
-    equineNft: 'inDevelopment',
-    beltCoin: 'inDevelopment',
-    vibrateDNA: 'inDevelopment',
-    farmCoin: 'inDevelopment',
-    freedomGuard: 'inDevelopment',
-    omnifinery: 'inDevelopment',
-    timeCoin: 'inDevelopment',
-    destinyToken: 'inDevelopment'
-};
-
+    const projectsStatus = {
+        rreel: 'inDevelopment',
+        researchClear: 'inDevelopment',
+        equineNft: 'inDevelopment',
+        beltCoin: 'inDevelopment',
+        vibrateDNA: 'inDevelopment',
+        farmCoin: 'inDevelopment',
+        freedomGuard: 'inDevelopment',
+        omnifinery: 'inDevelopment',
+        timeCoin: 'inDevelopment',
+        destinyToken: 'inDevelopment'
+    };
 
     const filteredProjects = (projectName) => {
         if (!filter || filter === 'all') return true;
@@ -89,12 +76,14 @@ export default function Home() {
               </div>
                     ))}
                 </div>
+                    ))}
+                </div>
                 <div className='products-cover' id='products-section'>
                     <h3>Products</h3>
                     <ProductFilter setFilter={setFilter} />
                 </div>
-               <div className='grid-container'>
-    {filteredProjects('rreel') && (
+                <div className='grid-container'>
+                   {filteredProjects('rreel') && (
         <Link href="/rreel" className='cover'>
             <Image src="/rreel.jpg" alt="rrel logo" width={80} height={80} />
             <h2>RREEL</h2>
@@ -167,7 +156,8 @@ species within aquatic environments. Employing cutting edge hardware and leverag
     )}
 </div>
 </section>
- <Footer />
-  </>
-  );
+            <Footer />
+        </>
+    );
 }
+
