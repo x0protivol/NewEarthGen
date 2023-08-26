@@ -45,7 +45,9 @@ export default function Home() {
             <section>
                 <div className='slider'>
                     {[...Array(4)].map((_, index) => (
-                        <div className='slide-track' key={index}>
+                        <div className='slider'>
+    {[...Array(4)].map((_, index) => (
+         <div className='slide-track' key={index}>
                             <Link href="/research-clear"> 
               <Image src="/ResearchClear.png" alt='Research Clear Logo' width={80} height={80} /> 
             </Link> 
@@ -73,12 +75,10 @@ export default function Home() {
             <Link href="/TimeCoin"> 
               <Image src="/time3.png" alt='TimeCoin Logo' width={80} height={80} /> 
             </Link> 
-              </div>
-                    ))}
-                </div>
-                    ))}
-                </div>
-                <div className='products-cover' id='products-section'>
+        </div>
+          ))}
+      </div>
+     <div className='products-cover' id='products-section'>
                     <h3>Products</h3>
                     <ProductFilter setFilter={setFilter} />
                 </div>
