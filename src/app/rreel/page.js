@@ -3,7 +3,7 @@ import ReactPlayer from "react-player";
 import "../../../Style/rreel.css"; 
  
 const Rreel = () => { 
-  const videoUrl = 'https://vimeo.com/829796409?share=copy'; 
+  const videoUrl = 'https://vimeo.com/858243027?share=copy'; 
  
   return ( 
     <main className="main"> 
