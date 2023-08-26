@@ -1,31 +1,27 @@
 import Image from 'next/image';
 import Link from "next/link";
-import { Container, Typography, Grid, Card, CardMedia, CardContent, Box } from '@mui/material';
-import { CssBaseline } from '@mui/material';
-import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { Container, Typography, Grid, Card, CardMedia, CardContent, Box, CssBaseline } from '@mui/material';
 import ParticlesBackground from '../../component/Particles';
 import Footer from '../../component/Footer';
 
-function MyApp({ Component, pageProps }) {
-  const theme = createTheme();
+function Home() {
+    return (
+        <>
+            <CssBaseline />
+            <Box sx={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                <ParticlesBackground />
+                <Typography variant="h2" color="primary" sx={{ zIndex: 2 }}>
+                    Real World Blockchain Applications
+                </Typography>
+            </Box>
 
-  return (
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Box sx={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-        <ParticlesBackground />
-        <Typography variant="h2" color="primary" sx={{ zIndex: 2 }}>
-          Real World Blockchain Applications
-        </Typography>
-      </Box>
+            <Container>
+                <Box my={4}>
+                    <Typography variant="h4" gutterBottom>
+                        Featured Products
+                    </Typography>
 
-      <Container>
-        <Box my={4}>
-          <Typography variant="h4" gutterBottom>
-            Featured Products
-          </Typography>
-
-          <Grid container spacing={4}>
+         <Grid container spacing={4}>
     {[
     { href: "/rreel", src: "/rreel.jpg", title: "RREEL", desc: "RREEL is a protocol for the preservation of memories as digital records, minted as non-fungible tokens on the blockchain under the ERC-721 standard and as RREEL token by which theaters can do rewarding to users." },
     { href: "/research-clear", src: "/ResearchClear.png", title: "Research Clear", desc: "ResearchClear is an innovative blockchain-powered platform designed to revolutionize the landscape of academic research. With a mission to address the challenges faced by researchers and enhance the efficiency and transparency of the research process." },
@@ -63,9 +59,10 @@ function MyApp({ Component, pageProps }) {
         </Box>
       </Container>
 
-      <Footer />
-    </ThemeProvider>
-  );
+
+            <Footer />
+        </>
+    );
 }
 
-export default MyApp;
+export default Home;
