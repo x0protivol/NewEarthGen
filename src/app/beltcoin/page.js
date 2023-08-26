@@ -2,7 +2,7 @@
 import ReactPlayer from "react-player"; 
  
 const BeltCoin = () => { 
-  const videoUrl = 'https://vimeo.com/829918389?share=copy'; 
+  const videoUrl = 'https://vimeo.com/858184646?share=copy'; 
  
   return ( 
     <main className="main"> 
