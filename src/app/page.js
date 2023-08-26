@@ -45,8 +45,6 @@ export default function Home() {
             <section>
                 <div className='slider'>
                     {[...Array(4)].map((_, index) => (
-                        <div className='slider'>
-    {[...Array(4)].map((_, index) => (
          <div className='slide-track' key={index}>
                             <Link href="/research-clear"> 
               <Image src="/ResearchClear.png" alt='Research Clear Logo' width={80} height={80} /> 
