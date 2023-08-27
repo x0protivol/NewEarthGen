@@ -25,7 +25,7 @@ export default function Home() {
   }, []);
 
   const projects = [
-     {
+    {
         href: "/rreel",
         src: "/rreel.jpg",
         alt: "rrel logo",
@@ -138,13 +138,11 @@ export default function Home() {
             <button onClick={() => setShowFilterDropdown(!showFilterDropdown)}>
               Filter Options
             </button>
-            {showFilterDropdown && (
-              <div className="filter-dropdown" ref={dropdownRef}>
-                <button onClick={() => { setFilter(""); setShowFilterDropdown(false); }}>All</button>
-                <button onClick={() => { setFilter("planned"); setShowFilterDropdown(false); }}>Planned Projects</button>
-                <button onClick={() => { setFilter("completed"); setShowFilterDropdown(false); }}>Completed Projects</button>
-              </div>
-            )}
+            <div className={`filter-dropdown ${showFilterDropdown ? 'filter-show' : ''}`} ref={dropdownRef}>
+              <button onClick={() => { setFilter(""); setShowFilterDropdown(false); }}>All</button>
+              <button onClick={() => { setFilter("planned"); setShowFilterDropdown(false); }}>Planned Projects</button>
+              <button onClick={() => { setFilter("completed"); setShowFilterDropdown(false); }}>Completed Projects</button>
+            </div>
           </div>
         </div>
 
@@ -162,4 +160,3 @@ export default function Home() {
     </>
   )
 }
-
