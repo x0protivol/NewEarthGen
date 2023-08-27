@@ -1,5 +1,5 @@
 'use client';
-import { useState } from 'react';
+import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import Link from "next/link";
 import '../../Style/page.css';
@@ -8,9 +8,24 @@ import Footer from '../../component/Footer';
 
 export default function Home() {
   const [currentFilter, setFilter] = useState("");  // Either "planned", "completed", or "" (for all)
+  const [showFilterDropdown, setShowFilterDropdown] = useState(false);
+  const dropdownRef = useRef(null);
 
- const projects = [
-    {
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowFilterDropdown(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
+  const projects = [
+     {
         href: "/rreel",
         src: "/rreel.jpg",
         alt: "rrel logo",
@@ -90,7 +105,7 @@ export default function Home() {
         description: "DestinyToken (DTP) is a stablecoin in the asset creation in DeFi category.",
         status: "planned"
     }
-];
+  ];
 
   const filteredProjects = currentFilter ? projects.filter(project => project.status === currentFilter) : projects;
 
@@ -106,26 +121,33 @@ export default function Home() {
       </main>
       <section>
         <div className='slider'>
-    {[...Array(4)].map((_, index) => (
-        <div className='slide-track' key={index}>
-            {projects.map(project => (
+          {[...Array(4)].map((_, index) => (
+            <div className='slide-track' key={index}>
+              {projects.map(project => (
                 <Link href={project.href} key={project.title}>
-                    <Image src={project.src} alt={project.alt} width={80} height={80} />
+                  <Image src={project.src} alt={project.alt} width={80} height={80} />
                 </Link>
-            ))}
+              ))}
+            </div>
+          ))}
         </div>
-    ))}
-</div>
 
         <div className='products-cover' id='products-section'>
           <h3>Products</h3>
-          {/* Filter UI */}
-          <div>
-            <button onClick={() => setFilter("")}>All</button>
-            <button onClick={() => setFilter("planned")}>Planned Projects</button>
-            <button onClick={() => setFilter("completed")}>Completed Projects</button>
+          <div className="filter-container">
+            <button onClick={() => setShowFilterDropdown(!showFilterDropdown)}>
+              Filter Options
+            </button>
+            {showFilterDropdown && (
+              <div className="filter-dropdown" ref={dropdownRef}>
+                <button onClick={() => { setFilter(""); setShowFilterDropdown(false); }}>All</button>
+                <button onClick={() => { setFilter("planned"); setShowFilterDropdown(false); }}>Planned Projects</button>
+                <button onClick={() => { setFilter("completed"); setShowFilterDropdown(false); }}>Completed Projects</button>
+              </div>
+            )}
           </div>
         </div>
+
         <div className='grid-container'>
           {filteredProjects.map(project => (
             <Link href={project.href} className='cover' key={project.title}>
@@ -140,3 +162,4 @@ export default function Home() {
     </>
   )
 }
+
