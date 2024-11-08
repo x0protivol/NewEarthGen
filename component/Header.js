@@ -8,7 +8,7 @@ import { faBars, faClose } from "@fortawesome/free-solid-svg-icons";
 
 
 export default function Header() {
-  const emailAddress = 'NewGenEarth@protonmail.com';
+  const emailAddress = 'aman@newearthgen.co';
 
   const [activeLink, setActiveLink] = useState(null);
   const [navbarOpen, setNavbarOpen] = useState(false)
