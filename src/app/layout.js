@@ -1,4 +1,5 @@
 import './globals.css'
+import '../../../Style/rreel.css';
 import { Inter } from 'next/font/google';
 import Header from '../../component/Header';
 

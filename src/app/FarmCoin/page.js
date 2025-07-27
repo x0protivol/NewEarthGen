@@ -1,6 +1,6 @@
-'use client' 
+'use client';
 import ReactPlayer from "react-player";
-import "../../../Style/rreel.css";
+// Removed local CSS import; ensure '../../../Style/rreel.css' is imported in layout.js for global styles
 
 const FarmCoin = () => {
   const videoUrl = 'https://vimeo.com/853802261?share=copy';
@@ -21,11 +21,11 @@ const FarmCoin = () => {
           <h2 className="heading-text">Overview</h2>
         </header>
         <p className="p-text">
-        Farm Coin is  aimed at ending farm slavery, ensuring fair compensation, and fostering sustainable farming practices, complemented by universal basic income, gleaning programs, and dedicated resting areas for remote farmers, all while providing financial growth through staking to the farming community.
+          Farm Coin is  aimed at ending farm slavery, ensuring fair compensation, and fostering sustainable farming practices, complemented by universal basic income, gleaning programs, and dedicated resting areas for remote farmers, all while providing financial growth through staking to the farming community.
         </p>
       </section>
 
-      <section className="m-bottom">
+      <section className="m-bottom" aria-label="FarmCoin video">
         <ReactPlayer
           url={videoUrl}
           controls={true}
