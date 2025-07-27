@@ -29,11 +29,11 @@ const About = () => {
             </p>
           </div>
           <div>
-            <Image src="/success.jpg" alt="" width={120} height={100} />
+            <Image src="/success.jpg" alt="Success illustration" width={120} height={100} />
           </div>
           {/*2 */}
           <div className={styles.orderthree}>
-            <Image src="/projects.jpg" alt="" width={120} height={100} />
+            <Image src="/projects.jpg" alt="Projects illustration" width={120} height={100} />
           </div>
           <div className={styles.ordertwo}>
             <h2>Launching Projects in the Web3 Ecosystem</h2>
@@ -49,11 +49,11 @@ const About = () => {
             </p>
           </div>
           <div>
-            <Image src="/code.jpg" alt="" width={120} height={100} />
+            <Image src="/code.jpg" alt="Code illustration" width={120} height={100} />
           </div>
           {/*4 */}
           <div className={styles.orderfive}>
-            <Image src="/team.jpg" alt="" width={120} height={100} />
+            <Image src="/team.jpg" alt="Team illustration" width={120} height={100} />
           </div>
           <div className={styles.orderfour}>
             <h2>A Holistic Approach to Project Success</h2>
@@ -65,11 +65,9 @@ const About = () => {
       </section>
       <section className={styles.center}>
         <Link href="/#products-section">
-          <a>
-            <h3>
-              Take a look at our products
-            </h3>
-          </a>
+          <h3>
+            Take a look at our products
+          </h3>
         </Link>
       </section>
       <section className={styles.centersection}>
@@ -82,7 +80,6 @@ const About = () => {
           <p>
             If you have a vision for a Web3 project, we invite you to join forces with New Earth Gen. Whether you are a blockchain enthusiast, an entrepreneur, or an organization looking to explore the potential of Web3, we are here to support you. Together, we can turn ideas into reality and contribute to the advancement of decentralized technologies.
           </p>
-          {/* <Image src="/maps.png" alt="" width={80} height={80} /> */}
         </div>
         <div className={styles.flex}>
           <p>Want to learn more about us?</p>

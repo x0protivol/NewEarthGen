@@ -1,89 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@400;500;600&display=swap');
+
 .footer {
-  padding-inline: 60px;
-  padding-block: 4rem;
+  padding: 4rem 2rem;
   background-color: #f7f8eb;
+  border-top: 1px solid #ccd5ae;
 }
 
 .flexcontainer {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   letter-spacing: 1px;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 2rem;
 }
 
 .flexcontainer a {
   text-decoration: none;
   font-family: inherit;
-  font-size: calc(0.75rem + 0.5vw);
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.flexcontainer a:hover {
+  color: #6ebc6e;
 }
 
 .text {
   text-align: center;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #ccd5ae;
+  font-size: clamp(0.8rem, 1.5vw, 1rem);
+  color: #666;
 }
 
 .pblock {
-  padding-block-end: 1rem;
-  font-size: calc(1rem + 0.5vw);
+  padding-bottom: 1rem;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
-
+  color: #132a13;
+  margin: 0;
 }
 
 .pbottom {
-  padding-block-end: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin: 0;
 }
 
 .pbottom a {
-  color: #000;
+  color: #132a13;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
 }
 
 .blockend {
-  font-size: calc(1rem + 1vw);
+  font-size: clamp(1.25rem, 3vw, 2rem);
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
-  padding-block-end: 1.5rem;
+  padding-bottom: 1.5rem;
+  color: #132a13;
+  margin: 0;
 }
 
 .btn {
-  padding: 0.8rem;
-  width: 180px;
-  border: 1px solid #000;
-  border-radius: 6px;
-  font-size: calc(0.75rem + 0.5vw);
+  padding: 1rem 1.5rem;
+  min-width: 180px;
+  border: 2px solid #132a13;
+  border-radius: 8px;
+  font-size: clamp(0.9rem, 2vw, 1.1rem);
   font-weight: 400;
-  background-color: rgba(255, 255, 255, 0.04);
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .btn a {
-  color: #000;
+  color: #132a13;
   font-family: 'Dosis', sans-serif;
   font-weight: 600;
+  display: block;
+  width: 100%;
+  height: 100%;
 }
 
 .btn:hover {
-  background-color: #ccd5ae;
-  border: 1px solid #f7f8eb;
+  background-color: #132a13;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(19, 42, 19, 0.3);
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 699px) {
+.btn:hover a {
+  color: #f7f8eb;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
   .footer {
-    padding-inline: 1.5rem;
-    padding-block: 2rem;
+    padding: 3rem 1.5rem;
+  }
+  
+  .flexcontainer {
+    gap: 1.5rem;
+  }
+}
+
+/* Mobile styles - iPhone and Android */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 2rem 1rem;
   }
 
   .flexcontainer {
     flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+  }
+
+  .flexcontainer > div:first-child {
+    order: 2;
+  }
+
+  .flexcontainer > div:last-child {
+    order: 1;
   }
 
   .blockend {
-    display: none;
+    display: block;
+    margin-bottom: 1rem;
   }
 
   .btn {
-    margin-block-end: 1.5rem;
+    width: 100%;
+    max-width: 250px;
+    padding: 1rem;
+  }
+
+  .text {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .footer {
+    padding: 1.5rem 0.75rem;
+  }
+
+  .flexcontainer {
+    gap: 1.5rem;
+  }
+
+  .btn {
+    padding: 0.8rem;
+    min-width: 160px;
+  }
+
+  .text {
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+}
+
+/* iPhone specific optimizations */
+@media screen and (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+  .btn {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+  
+  .flexcontainer a {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Android specific optimizations */
+@media screen and (max-width: 414px) and (min-resolution: 2dppx) {
+  .footer {
+    overscroll-behavior: contain;
+  }
+}
+
+/* Landscape mobile orientation */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .footer {
+    padding: 1.5rem 1rem;
+  }
+  
+  .flexcontainer {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .text {
+    margin-top: 1rem;
+    padding-top: 1rem;
   }
 }

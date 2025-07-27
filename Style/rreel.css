@@ -7,34 +7,160 @@ body {
 }
 
 .main {
-  padding-top: 10rem;
-  width: calc(60% - 60px);
+  padding: 8rem 2rem 4rem;
+  max-width: 1000px;
   margin: 0 auto;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .heading-text {
   font-family: 'Dosis', sans-serif;
-  font-size: calc(1.25rem + 0.75vw);
-  margin-bottom: 0.5rem;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 1rem;
   letter-spacing: 1px;
+  color: #132a13;
+  line-height: 1.2;
 }
 
 .p-text {
-  margin-bottom: 1.5rem;
+  margin-bottom: 2rem;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+  color: #132a13;
 }
 
 .m-bottom {
-  margin-bottom: 8rem;
-  display: inline-block;
+  margin-bottom: 4rem;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 699px) {
+.m-bottom > div {
+  border-radius: 12px !important;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
   .main {
-    padding-top: 5rem;
-    width: calc(100% - 45px);
+    padding: 6rem 1.5rem 3rem;
+  }
+  
+  .m-bottom {
+    margin-bottom: 3rem;
+  }
+  
+  section {
+    margin-bottom: 2.5rem;
   }
 }
 
+/* Mobile styles - iPhone and Android */
+@media screen and (max-width: 768px) {
+  .main {
+    padding: 5rem 1rem 2rem;
+  }
+
+  .heading-text {
+    font-size: clamp(1.25rem, 5vw, 2rem);
+    margin-bottom: 0.75rem;
+  }
+
+  .p-text {
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .m-bottom {
+    margin-bottom: 3rem;
+    aspect-ratio: 16/10;
+  }
+
+  section {
+    margin-bottom: 2rem;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .main {
+    padding: 4rem 0.75rem 1.5rem;
+  }
+
+  .heading-text {
+    font-size: clamp(1.1rem, 6vw, 1.75rem);
+    letter-spacing: 0.5px;
+  }
+
+  .p-text {
+    font-size: clamp(0.85rem, 4vw, 1rem);
+    margin-bottom: 1.25rem;
+  }
+
+  .m-bottom {
+    margin-bottom: 2rem;
+    aspect-ratio: 16/11;
+  }
+
+  section {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* iPhone specific optimizations */
+@media screen and (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+  .m-bottom {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+}
+
+/* Android specific optimizations */
+@media screen and (max-width: 414px) and (min-resolution: 2dppx) {
+  .main {
+    overscroll-behavior: contain;
+  }
+}
+
+/* Landscape mobile orientation */
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  .main {
+    padding: 3rem 1rem 1rem;
+  }
+  
+  .m-bottom {
+    aspect-ratio: 16/8;
+    margin-bottom: 2rem;
+  }
+  
+  section {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Very small screens */
+@media screen and (max-width: 320px) {
+  .main {
+    padding: 3.5rem 0.5rem 1rem;
+  }
+  
+  .heading-text {
+    font-size: 1.25rem;
+  }
+  
+  .p-text {
+    font-size: 0.9rem;
+  }
+}

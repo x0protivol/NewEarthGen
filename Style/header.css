@@ -16,22 +16,39 @@
   position: fixed;
   z-index: 3;
   width: 100%;
+  top: 0;
+  left: 0;
 }
 
 .nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  padding: 0.5rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logoFlex {
+  flex-shrink: 0;
+}
+
+.logoFlex img {
+  width: auto;
+  height: 60px;
+  max-width: 200px;
 }
 
 .header-ul {
   display: flex;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .header-ul li {
   list-style-type: none;
-  padding-inline-end: clamp(1.5rem,  4%,   3rem);
+  padding: 0 1rem;
 }
 
 .link {
@@ -42,70 +59,146 @@
   cursor: pointer;
   font-family: 'Raleway', sans-serif;
   font-weight: 500;
-  font-size: calc(0.75rem + 0.5vw);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
-@media screen and (min-device-width: 320px) and (max-device-width: 699px) {
+.link:hover {
+  background-color: rgba(19, 42, 19, 0.1);
+  color: var(--shadeOfGreen);
+}
+
+/* Tablet styles */
+@media screen and (max-width: 1024px) {
+  .nav {
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .logoFlex img {
+    height: 50px;
+  }
+  
+  .header-ul li {
+    padding: 0 0.75rem;
+  }
+  
+  .link {
+    font-size: 0.9rem;
+  }
+}
+
+/* Mobile styles - iPhone and Android */
+@media screen and (max-width: 768px) {
   #menu,
   #close {
     display: block;
-    font-size: 1rem;
-  }
-
-  #menu {
-    margin-inline-end: 1.5rem;
-  }
-
-  #close {
-    position: absolute;
-    top: 33.95px;
-    right: 50px;
-    margin-inline-end: 0;
-  }
-
-  header {
-    border-block-end: none;
-    background-color: transparent;
+    font-size: 1.5rem;
+    color: var(--shadeOfGreen);
+    cursor: pointer;
+    padding: 0.5rem;
+    background: none;
+    border: none;
   }
 
   .nav {
-    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  .logoFlex img {
+    height: 40px;
+    width: auto;
   }
 
   .header-ul {
     position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
     transform: translateX(100%);
-    justify-content: flex-start;
-    align-items: baseline;
-    inset: 0 0 0 33%;
-    z-index: 3;
     flex-direction: column;
-    padding-inline-end: 0;
-    padding-block: min(20vh, 10rem);
-    padding-inline:  2em;
-    height: 100%;
-    background-color: rgba(255, 255, 255, 0.04);
-    backdrop-filter: blur(81.5485px);
-    transition: 450ms;
-  }
-
-  .header-ul li {
-    padding-block-end: 1.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4rem 2rem 2rem;
+    background-color: rgba(247, 248, 235, 0.98);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
   }
 
   .header-ul.active {
     transform: translateX(0);
-    transition: 450ms;
+  }
+
+  .header-ul li {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 1rem;
   }
 
   .link {
-    font-size: calc(0.75rem + 0.5vw);
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    transition: all 0.2s ease;
   }
 
+  .link:hover {
+    background-color: var(--shadeOfGreen);
+    color: var(--shadeOfWhite);
+  }
+
+  #close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+  .nav {
+    padding: 0.5rem;
+  }
+  
   .logoFlex img {
-    width: 15%;
-    height: 15%;
-    margin-left: 1.5rem;
+    height: 35px;
   }
+  
+  .header-ul {
+    width: 80%;
+    padding: 3rem 1.5rem 2rem;
+  }
+  
+  .link {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+}
 
+/* iPhone specific optimizations */
+@media screen and (max-width: 414px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header {
+    -webkit-user-select: none;
+    user-select: none;
+  }
+  
+  .link {
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+  }
+}
+
+/* Android specific optimizations */
+@media screen and (max-width: 414px) and (min-resolution: 2dppx) {
+  .header-ul {
+    overscroll-behavior: contain;
+  }
 }
